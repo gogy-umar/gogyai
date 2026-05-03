@@ -11,6 +11,7 @@ export const metadata = {
   description: 'Free AI-powered tools for teachers worldwide. Generate lesson plans, quizzes, rubrics, parent emails and more. No login required.',
   openGraph: { siteName: 'GogyAI', type: 'website', locale: 'en_US' },
   robots: { index: true, follow: true },
+  verification: { google: 'WKECbAufAMcoa4I0SF1Eh-9m_mPrYCaxEJoVb7dfpmc' },
 }
 
 const siteSchema = {
