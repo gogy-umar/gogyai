@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40" aria-label="GogyAI">
+  <!-- Graduation cap icon -->
+  <g transform="translate(0, 4)">
+    <!-- Cap board -->
+    <polygon points="16,8 32,14 16,20 0,14" fill="#1E40AF"/>
+    <!-- Cap base cylinder -->
+    <rect x="22" y="14" width="3" height="10" fill="#1E40AF"/>
+    <ellipse cx="23.5" cy="24" rx="3" ry="1.5" fill="#1E40AF"/>
+    <!-- Tassel -->
+    <line x1="32" y1="14" x2="32" y2="22" stroke="#1E40AF" stroke-width="1.5"/>
+    <circle cx="32" cy="23" r="1.5" fill="#1E40AF"/>
+  </g>
+  <!-- GogyAI text -->
+  <text x="40" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#1E40AF" letter-spacing="-0.5">GogyAI</text>
+</svg>
