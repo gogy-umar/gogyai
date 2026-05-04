@@ -108,7 +108,7 @@ export default function ReportCardCommentGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Report Card Comment Generator</h1>
-        <p className="text-slate-500 mb-6">Generate three comment options — short, medium, and detailed — tailored to each student&apos;s performance, strength, and growth area.</p>
+        <p className="text-slate-600 mb-6">Generate three comment options — short, medium, and detailed — tailored to each student&apos;s performance, strength, and growth area.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="report-card-comment-generator" />
       </section>
 
@@ -187,15 +187,15 @@ export default function ReportCardCommentGeneratorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI report card comments are built from your inputs, not from direct observation of the student. The output quality depends entirely on the quality and specificity of the strength and growth area descriptions you enter. If you enter vague inputs, review the output critically and add specificity manually. For communicating about the same student progress directly with families via email, the <Link href="/parent-email-writer" className="text-brand-700 hover:underline">Parent Email Writer</Link> generates professional messages for any communication purpose.
+          AI report card comments are built from your inputs, not from direct observation of the student. The output quality depends entirely on the quality and specificity of the strength and growth area descriptions you enter. If you enter vague inputs, review the output critically and add specificity manually. For communicating about the same student progress directly with families via email, the <Link href="/parent-email-writer" className="text-brand-700 underline">Parent Email Writer</Link> generates professional messages for any communication purpose.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The tool also does not have knowledge of your school&apos;s grading language conventions, required phrases, or prohibited language. Some districts have specific comment bank language or forbidden terms (e.g., prohibiting the word &quot;lazy&quot;). Review generated comments against your school&apos;s communication guidelines before use. For feedback that goes directly to students rather than families, the <Link href="/student-feedback-writer" className="text-brand-700 hover:underline">Student Feedback Writer</Link> generates structured, student-facing comments on any assignment type.
+          The tool also does not have knowledge of your school&apos;s grading language conventions, required phrases, or prohibited language. Some districts have specific comment bank language or forbidden terms (e.g., prohibiting the word &quot;lazy&quot;). Review generated comments against your school&apos;s communication guidelines before use. For feedback that goes directly to students rather than families, the <Link href="/student-feedback-writer" className="text-brand-700 underline">Student Feedback Writer</Link> generates structured, student-facing comments on any assignment type.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Do not enter student names into this tool. Use the [Student] placeholder system — fill in the name in your word processor or LMS after generating. FERPA protections apply to report card records. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Visit <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s full collection of free tools</Link> for all 30 communication, assessment, and planning tools available free to teachers.
+          Do not enter student names into this tool. Use the [Student] placeholder system — fill in the name in your word processor or LMS after generating. FERPA protections apply to report card records. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Visit <Link href="/" className="text-brand-700 underline">GogyAI&apos;s full collection of free tools</Link> for all 30 communication, assessment, and planning tools available free to teachers.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -224,7 +224,7 @@ export default function ReportCardCommentGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

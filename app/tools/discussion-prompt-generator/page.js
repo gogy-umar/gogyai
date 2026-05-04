@@ -104,7 +104,7 @@ export default function DiscussionPromptGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Discussion Prompt Generator</h1>
-        <p className="text-slate-500 mb-6">Generate open-ended discussion prompts with facilitator tips and follow-up questions for any subject, format, and thinking level.</p>
+        <p className="text-slate-600 mb-6">Generate open-ended discussion prompts with facilitator tips and follow-up questions for any subject, format, and thinking level.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="discussion-prompt-generator" />
       </section>
 
@@ -182,15 +182,15 @@ export default function DiscussionPromptGeneratorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI generates prompts based on the topic you describe, not on a reading of the actual text. For specific novels, articles, or primary sources, review the generated prompts against the actual text to ensure they're grounded in specific content students have read. A prompt that references something not actually in the assigned pages will derail a discussion immediately — use the <Link href="/lesson-plan-generator" className="text-brand-700 hover:underline">Lesson Plan Generator</Link> to build the full lesson structure around your discussion activity.
+          AI generates prompts based on the topic you describe, not on a reading of the actual text. For specific novels, articles, or primary sources, review the generated prompts against the actual text to ensure they're grounded in specific content students have read. A prompt that references something not actually in the assigned pages will derail a discussion immediately — use the <Link href="/lesson-plan-generator" className="text-brand-700 underline">Lesson Plan Generator</Link> to build the full lesson structure around your discussion activity.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Discussion facilitation itself is a complex, responsive skill that AI cannot perform. The prompts are a starting tool; the quality of the discussion depends on the teacher's ability to listen, redirect, invite quiet voices, and manage the pace of conversation in real time — pair with the <Link href="/blooms-taxonomy-question-generator" className="text-brand-700 hover:underline">Bloom&apos;s Taxonomy Question Generator</Link> to scaffold thinking levels across the full discussion.
+          Discussion facilitation itself is a complex, responsive skill that AI cannot perform. The prompts are a starting tool; the quality of the discussion depends on the teacher's ability to listen, redirect, invite quiet voices, and manage the pace of conversation in real time — pair with the <Link href="/blooms-taxonomy-question-generator" className="text-brand-700 underline">Bloom&apos;s Taxonomy Question Generator</Link> to scaffold thinking levels across the full discussion.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Discussion prompt inputs contain no student data. Topic and grade contain no personal information. GogyAI stores no personal information — inputs are used solely to generate discussion prompts. Discover <Link href="/" className="text-brand-700 hover:underline">all 30 free AI teaching tools on GogyAI</Link> to support every part of your instructional practice.
+          Discussion prompt inputs contain no student data. Topic and grade contain no personal information. GogyAI stores no personal information — inputs are used solely to generate discussion prompts. Discover <Link href="/" className="text-brand-700 underline">all 30 free AI teaching tools on GogyAI</Link> to support every part of your instructional practice.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -218,7 +218,7 @@ export default function DiscussionPromptGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

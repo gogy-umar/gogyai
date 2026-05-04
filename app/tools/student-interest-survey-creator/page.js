@@ -101,7 +101,7 @@ export default function StudentInterestSurveyCreatorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Student Interest Survey Creator</h1>
-        <p className="text-slate-500 mb-6">Generate a complete student interest survey — with questions students enjoy answering and tips on using the results.</p>
+        <p className="text-slate-600 mb-6">Generate a complete student interest survey — with questions students enjoy answering and tips on using the results.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="student-interest-survey-creator" />
       </section>
 
@@ -180,10 +180,10 @@ export default function StudentInterestSurveyCreatorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI-generated surveys ask questions that work for most students at the specified grade level, but cannot account for your specific classroom culture, recent school events, or sensitive topics that may not be appropriate given your student population. Review all questions before distributing with cultural responsiveness in mind, and consider using the <Link href="/seating-chart-suggestion-tool" className="text-brand-700 hover:underline">Seating Chart Suggestion Tool</Link> to put what you learn about student social connections to work in your classroom arrangement.
+          AI-generated surveys ask questions that work for most students at the specified grade level, but cannot account for your specific classroom culture, recent school events, or sensitive topics that may not be appropriate given your student population. Review all questions before distributing with cultural responsiveness in mind, and consider using the <Link href="/seating-chart-suggestion-tool" className="text-brand-700 underline">Seating Chart Suggestion Tool</Link> to put what you learn about student social connections to work in your classroom arrangement.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Surveys collect information but don't analyze it. The teacher's observation and relationship-building work is still required to understand what the answers actually mean for individual students — the <Link href="/classroom-story-generator" className="text-brand-700 hover:underline">Classroom Story Generator</Link> is one way to apply interest data directly in your instruction.
+          Surveys collect information but don't analyze it. The teacher's observation and relationship-building work is still required to understand what the answers actually mean for individual students — the <Link href="/classroom-story-generator" className="text-brand-700 underline">Classroom Story Generator</Link> is one way to apply interest data directly in your instruction.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
@@ -191,7 +191,7 @@ export default function StudentInterestSurveyCreatorPage() {
           This tool generates survey questions — it does not collect or store any student responses. Distribute the generated survey on paper or through your district's approved digital platform (Google Workspace for Education, Microsoft 365, etc.). Never enter student response data into any external AI tool.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Student interest data — particularly responses about home life, learning challenges, or personal preferences — should be treated as sensitive. Store paper surveys securely and share digital responses only with authorized personnel. Under FERPA, this information becomes part of a student's education record when kept in a teacher's files. Visit <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s full collection of free tools</Link> to explore more ways to build student-teacher connections.
+          Student interest data — particularly responses about home life, learning challenges, or personal preferences — should be treated as sensitive. Store paper surveys securely and share digital responses only with authorized personnel. Under FERPA, this information becomes part of a student's education record when kept in a teacher's files. Visit <Link href="/" className="text-brand-700 underline">GogyAI&apos;s full collection of free tools</Link> to explore more ways to build student-teacher connections.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -219,7 +219,7 @@ export default function StudentInterestSurveyCreatorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

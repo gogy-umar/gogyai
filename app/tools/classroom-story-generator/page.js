@@ -105,7 +105,7 @@ export default function ClassroomStoryGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Classroom Story Generator</h1>
-        <p className="text-slate-500 mb-6">Generate original, classroom-appropriate stories with discussion questions — tailored to your grade level, genre, and theme.</p>
+        <p className="text-slate-600 mb-6">Generate original, classroom-appropriate stories with discussion questions — tailored to your grade level, genre, and theme.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="classroom-story-generator" />
       </section>
 
@@ -189,10 +189,10 @@ export default function ClassroomStoryGeneratorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI stories can lack the nuance, cultural specificity, and emotional complexity of skilled human authors — particularly for stories exploring cultural identity, trauma, or sensitive historical events. For these topics, AI can generate a usable first draft, but careful teacher review and often significant revision is required. For leveled informational passages paired with comprehension questions, the <Link href="/reading-comprehension-creator" className="text-brand-700 hover:underline">Reading Comprehension Creator</Link> generates nonfiction reading activities at any grade level.
+          AI stories can lack the nuance, cultural specificity, and emotional complexity of skilled human authors — particularly for stories exploring cultural identity, trauma, or sensitive historical events. For these topics, AI can generate a usable first draft, but careful teacher review and often significant revision is required. For leveled informational passages paired with comprehension questions, the <Link href="/reading-comprehension-creator" className="text-brand-700 underline">Reading Comprehension Creator</Link> generates nonfiction reading activities at any grade level.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Character voice consistency across longer stories can be uneven. The tool works best for short and medium length stories. For extended narratives or chapter book content, generate individual scenes and connect them yourself. To support students&apos; engagement with the story&apos;s vocabulary, pair this with the <Link href="/vocabulary-list-builder" className="text-brand-700 hover:underline">Vocabulary List Builder</Link> to generate a targeted word list with definitions and usage sentences.
+          Character voice consistency across longer stories can be uneven. The tool works best for short and medium length stories. For extended narratives or chapter book content, generate individual scenes and connect them yourself. To support students&apos; engagement with the story&apos;s vocabulary, pair this with the <Link href="/vocabulary-list-builder" className="text-brand-700 underline">Vocabulary List Builder</Link> to generate a targeted word list with definitions and usage sentences.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
@@ -200,7 +200,7 @@ export default function ClassroomStoryGeneratorPage() {
           Story inputs contain no student data. Do not include real student names or identifying information in character descriptions — use fictional characters only. GogyAI stores no personal information; your inputs are used solely to generate your story.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Generated stories are original content and carry no copyright restrictions for classroom use. For any student-facing materials, review for age-appropriateness before distributing. Explore <Link href="/" className="text-brand-700 hover:underline">the full GogyAI toolkit</Link> — 30 free tools for literacy, lesson planning, assessment, and classroom management.
+          Generated stories are original content and carry no copyright restrictions for classroom use. For any student-facing materials, review for age-appropriateness before distributing. Explore <Link href="/" className="text-brand-700 underline">the full GogyAI toolkit</Link> — 30 free tools for literacy, lesson planning, assessment, and classroom management.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -228,7 +228,7 @@ export default function ClassroomStoryGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

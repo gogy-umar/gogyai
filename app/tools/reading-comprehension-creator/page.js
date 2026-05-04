@@ -112,7 +112,7 @@ export default function ReadingComprehensionCreatorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Reading Comprehension Creator</h1>
-        <p className="text-slate-500 mb-6">Generate original reading passages with comprehension questions and answer keys for any grade level.</p>
+        <p className="text-slate-600 mb-6">Generate original reading passages with comprehension questions and answer keys for any grade level.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="reading-comprehension-creator" />
       </section>
 
@@ -198,10 +198,10 @@ export default function ReadingComprehensionCreatorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI-generated passages are original but not published. They cannot be cited as authoritative sources. For research-based literacy activities, pair AI passages with verified sources — use the AI passage for comprehension practice and direct students to real sources for further reading. To support comprehension of the passage, pair it with a targeted word list from the <Link href="/vocabulary-list-builder" className="text-brand-700 hover:underline">Vocabulary List Builder</Link>, which generates definitions, examples, and usage sentences for any topic.
+          AI-generated passages are original but not published. They cannot be cited as authoritative sources. For research-based literacy activities, pair AI passages with verified sources — use the AI passage for comprehension practice and direct students to real sources for further reading. To support comprehension of the passage, pair it with a targeted word list from the <Link href="/vocabulary-list-builder" className="text-brand-700 underline">Vocabulary List Builder</Link>, which generates definitions, examples, and usage sentences for any topic.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Factual content in science and social studies passages is generally accurate but should be verified, especially for recent events, specific statistics, or nuanced historical claims. AI occasionally produces plausible-sounding errors — always read the passage before distributing. For creative, original stories that engage students with themes and characters, the <Link href="/classroom-story-generator" className="text-brand-700 hover:underline">Classroom Story Generator</Link> produces original classroom narratives at any grade level.
+          Factual content in science and social studies passages is generally accurate but should be verified, especially for recent events, specific statistics, or nuanced historical claims. AI occasionally produces plausible-sounding errors — always read the passage before distributing. For creative, original stories that engage students with themes and characters, the <Link href="/classroom-story-generator" className="text-brand-700 underline">Classroom Story Generator</Link> produces original classroom narratives at any grade level.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
@@ -209,14 +209,14 @@ export default function ReadingComprehensionCreatorPage() {
           Do not include student names, assessment data, or any identifying information in your inputs. Topic and grade level contain no personal data. GogyAI stores no personal information — inputs are used solely to generate your resource.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          FERPA governs student education records, not general curriculum resource creation. Check your district's AI use policy if you plan to use this tool as part of formal curriculum or assessment development. Browse <Link href="/" className="text-brand-700 hover:underline">all free tools on GogyAI</Link> for the complete set of reading, writing, and content creation tools available to educators at no cost.
+          FERPA governs student education records, not general curriculum resource creation. Check your district's AI use policy if you plan to use this tool as part of formal curriculum or assessment development. Browse <Link href="/" className="text-brand-700 underline">all free tools on GogyAI</Link> for the complete set of reading, writing, and content creation tools available to educators at no cost.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
         <div className="space-y-5">
           {[
             { q: 'How do I create a reading comprehension worksheet with AI?', a: 'Enter grade level, reading level, topic, passage length, and question types. The AI generates an original passage with comprehension questions and a full answer key in seconds.' },
-            { q: 'Can I generate reading passages for ELL students?', a: <>Yes. Set the reading level to &quot;below grade&quot; for your students&apos; grade. For additional ELL adaptation, use the <Link href="/text-simplifier" className="text-brand-700 hover:underline">Text Simplifier</Link> to further reduce language complexity while keeping the same topic.</> },
+            { q: 'Can I generate reading passages for ELL students?', a: <>Yes. Set the reading level to &quot;below grade&quot; for your students&apos; grade. For additional ELL adaptation, use the <Link href="/text-simplifier" className="text-brand-700 underline">Text Simplifier</Link> to further reduce language complexity while keeping the same topic.</> },
             { q: 'Are AI-generated reading passages original?', a: 'Yes. The AI generates original passages — not excerpts from published texts. Each generation produces unique content based on your specifications.' },
             { q: 'What topics work best for AI reading comprehension passages?', a: 'Science topics, social studies, geography, and general knowledge all produce strong passages. Fiction and narrative themes work well for literary skill practice. Current events produce less reliable results.' },
             { q: 'How many comprehension questions does the tool generate?', a: 'The tool generates 6–8 questions per passage, mixing multiple choice, short answer, and extended response. Remove or adjust questions that don\'t fit your lesson objective before printing.' },
@@ -238,7 +238,7 @@ export default function ReadingComprehensionCreatorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

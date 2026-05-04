@@ -106,7 +106,7 @@ export default function ParentEmailWriterPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Parent Email Writer</h1>
-        <p className="text-slate-500 mb-6">Generate a professional, ready-to-send parent email with a subject line — for any purpose and tone.</p>
+        <p className="text-slate-600 mb-6">Generate a professional, ready-to-send parent email with a subject line — for any purpose and tone.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="parent-email-writer" />
       </section>
 
@@ -186,15 +186,15 @@ export default function ParentEmailWriterPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          This tool is not appropriate for legally sensitive, adversarial, or crisis communications. For situations involving formal complaints, safety concerns, or IEP disputes, work with your administrator or school counselor before drafting any written communication. AI is appropriate for professional routine communications — not for communications that may become legal documents. For formal written records about student performance that go home as part of report card cycles, the <Link href="/report-card-comment-generator" className="text-brand-700 hover:underline">Report Card Comment Generator</Link> produces professional, growth-oriented comments for any subject and performance level.
+          This tool is not appropriate for legally sensitive, adversarial, or crisis communications. For situations involving formal complaints, safety concerns, or IEP disputes, work with your administrator or school counselor before drafting any written communication. AI is appropriate for professional routine communications — not for communications that may become legal documents. For formal written records about student performance that go home as part of report card cycles, the <Link href="/report-card-comment-generator" className="text-brand-700 underline">Report Card Comment Generator</Link> produces professional, growth-oriented comments for any subject and performance level.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The AI also doesn&apos;t know the specific history of your relationship with a family, cultural communication preferences, or language access needs. For families who communicate in a language other than English, use a translation service to translate the generated email rather than generating directly in the language, so you can review the content first. For class-wide communications that update all families at once, the <Link href="/newsletter-draft-generator" className="text-brand-700 hover:underline">Newsletter Draft Generator</Link> produces a complete formatted newsletter from your announcements and upcoming events.
+          The AI also doesn&apos;t know the specific history of your relationship with a family, cultural communication preferences, or language access needs. For families who communicate in a language other than English, use a translation service to translate the generated email rather than generating directly in the language, so you can review the content first. For class-wide communications that update all families at once, the <Link href="/newsletter-draft-generator" className="text-brand-700 underline">Newsletter Draft Generator</Link> produces a complete formatted newsletter from your announcements and upcoming events.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Do not enter student names or parent names into this tool. Use general descriptions of the situation in the key points field. GogyAI stores no personal information. Inputs are used only during your session and are not retained. FERPA protections apply to any communication involving student information — follow your district&apos;s AI use policy for email workflows. See <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s free AI tools for teachers</Link> for all 30 communication, planning, and assessment tools built for educators.
+          Do not enter student names or parent names into this tool. Use general descriptions of the situation in the key points field. GogyAI stores no personal information. Inputs are used only during your session and are not retained. FERPA protections apply to any communication involving student information — follow your district&apos;s AI use policy for email workflows. See <Link href="/" className="text-brand-700 underline">GogyAI&apos;s free AI tools for teachers</Link> for all 30 communication, planning, and assessment tools built for educators.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -223,7 +223,7 @@ export default function ParentEmailWriterPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

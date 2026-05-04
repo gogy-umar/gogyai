@@ -91,7 +91,7 @@ export default function TextSimplifierPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Text Simplifier</h1>
-        <p className="text-slate-500 mb-6">Simplify any text to the reading level your students need — for ELL learners, struggling readers, or below-grade access.</p>
+        <p className="text-slate-600 mb-6">Simplify any text to the reading level your students need — for ELL learners, struggling readers, or below-grade access.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="text-simplifier" />
       </section>
 
@@ -176,10 +176,10 @@ export default function TextSimplifierPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Text simplification reduces linguistic complexity but cannot provide the comprehension scaffolding that comes from teacher explanation, visual supports, and background knowledge building. Simplified text works best as part of a broader differentiation strategy, not as a standalone solution. For complete reading activities that pair leveled passages with comprehension questions, the <Link href="/reading-comprehension-creator" className="text-brand-700 hover:underline">Reading Comprehension Creator</Link> generates both passage and questions at your specified grade level.
+          Text simplification reduces linguistic complexity but cannot provide the comprehension scaffolding that comes from teacher explanation, visual supports, and background knowledge building. Simplified text works best as part of a broader differentiation strategy, not as a standalone solution. For complete reading activities that pair leveled passages with comprehension questions, the <Link href="/reading-comprehension-creator" className="text-brand-700 underline">Reading Comprehension Creator</Link> generates both passage and questions at your specified grade level.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Very technical content — advanced mathematics, specialized legal language, highly technical scientific writing — may lose essential precision when simplified. For technical content, simplify the explanatory language around the technical terms rather than replacing the terms themselves. For practice worksheets that accompany a simplified passage, the <Link href="/worksheet-generator" className="text-brand-700 hover:underline">Worksheet Generator</Link> creates topic-specific questions with answer keys.
+          Very technical content — advanced mathematics, specialized legal language, highly technical scientific writing — may lose essential precision when simplified. For technical content, simplify the explanatory language around the technical terms rather than replacing the terms themselves. For practice worksheets that accompany a simplified passage, the <Link href="/worksheet-generator" className="text-brand-700 underline">Worksheet Generator</Link> creates topic-specific questions with answer keys.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
@@ -187,7 +187,7 @@ export default function TextSimplifierPage() {
           Paste curriculum text only — textbook passages, articles, primary sources. Never paste student-written work containing names, IDs, or any identifying information. GogyAI stores no personal information; your inputs are used solely to generate the simplified text.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          FERPA governs student education records. Curriculum materials — textbook passages, published articles — are not student records. If a student has shared their own writing with you, do not paste it into any external AI tool without your district's explicit guidance on that use case. Browse <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s library of AI tools for educators</Link> for the complete set of free literacy, planning, and assessment tools.
+          FERPA governs student education records. Curriculum materials — textbook passages, published articles — are not student records. If a student has shared their own writing with you, do not paste it into any external AI tool without your district's explicit guidance on that use case. Browse <Link href="/" className="text-brand-700 underline">GogyAI&apos;s library of AI tools for educators</Link> for the complete set of free literacy, planning, and assessment tools.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -216,7 +216,7 @@ export default function TextSimplifierPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

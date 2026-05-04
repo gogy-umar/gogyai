@@ -90,7 +90,7 @@ export default function VocabularyListBuilderPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Vocabulary List Builder</h1>
-        <p className="text-slate-500 mb-6">Generate organized vocabulary lists with definitions, examples, and usage sentences for any subject or text.</p>
+        <p className="text-slate-600 mb-6">Generate organized vocabulary lists with definitions, examples, and usage sentences for any subject or text.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="vocabulary-list-builder" />
       </section>
 
@@ -176,10 +176,10 @@ export default function VocabularyListBuilderPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI vocabulary list builders select words based on topic frequency and grade-level utility, not based on the specific words in a particular textbook or novel. For literature-based vocabulary lists, you'll need to review the output and replace words that don't appear in the actual text students are reading. For a complete reading activity that pairs a leveled passage with comprehension questions on the same topic, the <Link href="/reading-comprehension-creator" className="text-brand-700 hover:underline">Reading Comprehension Creator</Link> generates both passage and questions from the same input.
+          AI vocabulary list builders select words based on topic frequency and grade-level utility, not based on the specific words in a particular textbook or novel. For literature-based vocabulary lists, you'll need to review the output and replace words that don't appear in the actual text students are reading. For a complete reading activity that pairs a leveled passage with comprehension questions on the same topic, the <Link href="/reading-comprehension-creator" className="text-brand-700 underline">Reading Comprehension Creator</Link> generates both passage and questions from the same input.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The tool does not generate visual supports such as word maps, graphic organizers, or illustrations. These are effective vocabulary instruction tools — but you'll need to create or source them separately. For reading materials that are too complex for your students' current level, the <Link href="/text-simplifier" className="text-brand-700 hover:underline">Text Simplifier</Link> reduces linguistic complexity while preserving all key content — useful for making the same passage accessible to below-grade readers.
+          The tool does not generate visual supports such as word maps, graphic organizers, or illustrations. These are effective vocabulary instruction tools — but you'll need to create or source them separately. For reading materials that are too complex for your students' current level, the <Link href="/text-simplifier" className="text-brand-700 underline">Text Simplifier</Link> reduces linguistic complexity while preserving all key content — useful for making the same passage accessible to below-grade readers.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
@@ -187,7 +187,7 @@ export default function VocabularyListBuilderPage() {
           Vocabulary list inputs contain no student data. Do not include student names or identifying information in your inputs. GogyAI stores no personal information — your inputs are used solely to generate your vocabulary list.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          FERPA applies to student records, not curriculum materials. Vocabulary list creation falls well within standard educational tool use. Check your district's AI tool policy if integrating into formal curriculum development. Find all free reading and literacy tools at <Link href="/" className="text-brand-700 hover:underline">GogyAI — free tools for teachers</Link>.
+          FERPA applies to student records, not curriculum materials. Vocabulary list creation falls well within standard educational tool use. Check your district's AI tool policy if integrating into formal curriculum development. Find all free reading and literacy tools at <Link href="/" className="text-brand-700 underline">GogyAI — free tools for teachers</Link>.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -215,7 +215,7 @@ export default function VocabularyListBuilderPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

@@ -120,7 +120,7 @@ export default function ProfessionalDevelopmentGoalWriterPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Professional Development Goal Writer</h1>
-        <p className="text-slate-500 mb-6">Generate SMART PD goals with action steps, resources, success metrics, and mid-point check-in questions for teachers and school leaders.</p>
+        <p className="text-slate-600 mb-6">Generate SMART PD goals with action steps, resources, success metrics, and mid-point check-in questions for teachers and school leaders.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="professional-development-goal-writer" />
       </section>
 
@@ -199,10 +199,10 @@ export default function ProfessionalDevelopmentGoalWriterPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI-generated PD goals need to be aligned to your specific evaluation framework. Different districts use different frameworks — Danielson, Marzano, TPEP, or district-specific rubrics — and your goal statement should reference the specific domain or standard relevant to your growth area. The AI generates a professionally framed SMART goal; you align the language to your district's framework — and the <Link href="/learning-objectives-writer" className="text-brand-700 hover:underline">Learning Objectives Writer</Link> can help you articulate measurable classroom-level outcomes that align with your PD goal.
+          AI-generated PD goals need to be aligned to your specific evaluation framework. Different districts use different frameworks — Danielson, Marzano, TPEP, or district-specific rubrics — and your goal statement should reference the specific domain or standard relevant to your growth area. The AI generates a professionally framed SMART goal; you align the language to your district's framework — and the <Link href="/learning-objectives-writer" className="text-brand-700 underline">Learning Objectives Writer</Link> can help you articulate measurable classroom-level outcomes that align with your PD goal.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Success metrics in the generated goal may need to be adjusted to use your school's specific assessment tools and data systems. Replace generic metrics with the specific tools and data sources your evaluator will recognize and accept as evidence — and use the <Link href="/discussion-prompt-generator" className="text-brand-700 hover:underline">Discussion Prompt Generator</Link> to create structured PLC discussion questions around your PD goal topic.
+          Success metrics in the generated goal may need to be adjusted to use your school's specific assessment tools and data systems. Replace generic metrics with the specific tools and data sources your evaluator will recognize and accept as evidence — and use the <Link href="/discussion-prompt-generator" className="text-brand-700 underline">Discussion Prompt Generator</Link> to create structured PLC discussion questions around your PD goal topic.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
@@ -210,7 +210,7 @@ export default function ProfessionalDevelopmentGoalWriterPage() {
           PD goal inputs contain no student data. Growth area, role, and school priority contain no personal information. GogyAI stores no personal information — inputs are used solely to generate your professional development goal document.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The generated document is your professional development plan — a work document, not a student record. It is appropriate to share with your evaluator, coach, or PLC team as a professional growth planning tool. Visit <Link href="/" className="text-brand-700 hover:underline">GogyAI — free tools for teachers</Link> to explore more resources for professional development and instructional planning.
+          The generated document is your professional development plan — a work document, not a student record. It is appropriate to share with your evaluator, coach, or PLC team as a professional growth planning tool. Visit <Link href="/" className="text-brand-700 underline">GogyAI — free tools for teachers</Link> to explore more resources for professional development and instructional planning.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -238,7 +238,7 @@ export default function ProfessionalDevelopmentGoalWriterPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

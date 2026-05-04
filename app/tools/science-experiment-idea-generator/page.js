@@ -92,7 +92,7 @@ export default function ScienceExperimentIdeaGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Science Experiment Idea Generator</h1>
-        <p className="text-slate-500 mb-6">Generate 3 lab-ready experiment ideas with materials, procedures, hypothesis prompts, and expected results.</p>
+        <p className="text-slate-600 mb-6">Generate 3 lab-ready experiment ideas with materials, procedures, hypothesis prompts, and expected results.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="science-experiment-idea-generator" />
       </section>
 
@@ -169,15 +169,15 @@ export default function ScienceExperimentIdeaGeneratorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI-generated safety notes are general guidance based on the materials described. For experiments involving heat, open flame, concentrated chemicals, or electrical components, verify safety requirements against your school's safety guidelines and OSHA standards — do not rely solely on AI safety notes, and use the <Link href="/worksheet-generator" className="text-brand-700 hover:underline">Worksheet Generator</Link> to create a structured lab recording sheet for student observations and results.
+          AI-generated safety notes are general guidance based on the materials described. For experiments involving heat, open flame, concentrated chemicals, or electrical components, verify safety requirements against your school's safety guidelines and OSHA standards — do not rely solely on AI safety notes, and use the <Link href="/worksheet-generator" className="text-brand-700 underline">Worksheet Generator</Link> to create a structured lab recording sheet for student observations and results.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Highly specialized or advanced experiments — AP Chemistry, advanced physics, or biology requiring living organisms — may produce suggestions that need significant expert review. Use the AI output as a starting point and consult subject-matter resources for verification, or use the <Link href="/unit-plan-creator" className="text-brand-700 hover:underline">Unit Plan Creator</Link> to map how experiments sequence across a full science unit.
+          Highly specialized or advanced experiments — AP Chemistry, advanced physics, or biology requiring living organisms — may produce suggestions that need significant expert review. Use the AI output as a starting point and consult subject-matter resources for verification, or use the <Link href="/unit-plan-creator" className="text-brand-700 underline">Unit Plan Creator</Link> to map how experiments sequence across a full science unit.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Science experiment inputs contain no student data. Topic, materials, and grade level contain no personal information. GogyAI stores no personal information — inputs are used solely to generate experiment ideas. Explore <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s free AI tools for teachers</Link> to find more science and lesson planning resources.
+          Science experiment inputs contain no student data. Topic, materials, and grade level contain no personal information. GogyAI stores no personal information — inputs are used solely to generate experiment ideas. Explore <Link href="/" className="text-brand-700 underline">GogyAI&apos;s free AI tools for teachers</Link> to find more science and lesson planning resources.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -205,7 +205,7 @@ export default function ScienceExperimentIdeaGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

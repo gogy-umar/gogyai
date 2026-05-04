@@ -96,7 +96,7 @@ export default function RubricBuilderPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Rubric Builder</h1>
-        <p className="text-slate-500 mb-6">Generate a complete scoring rubric with criteria, performance levels, and clear descriptors for any assignment.</p>
+        <p className="text-slate-600 mb-6">Generate a complete scoring rubric with criteria, performance levels, and clear descriptors for any assignment.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="rubric-builder" />
       </section>
 
@@ -177,15 +177,15 @@ export default function RubricBuilderPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI rubrics are built on general knowledge of assessment practices for each assignment type — they are not aligned to your specific curriculum standards or assignment prompt. After generation, match the criteria language to your actual assignment requirements and adjust any descriptors that reference content you haven&apos;t covered. Once you&apos;re grading work against the rubric, the <Link href="/essay-feedback-generator" className="text-brand-700 hover:underline">Essay Feedback Generator</Link> produces structured, specific written comments to accompany the rubric score.
+          AI rubrics are built on general knowledge of assessment practices for each assignment type — they are not aligned to your specific curriculum standards or assignment prompt. After generation, match the criteria language to your actual assignment requirements and adjust any descriptors that reference content you haven&apos;t covered. Once you&apos;re grading work against the rubric, the <Link href="/essay-feedback-generator" className="text-brand-700 underline">Essay Feedback Generator</Link> produces structured, specific written comments to accompany the rubric score.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The tool generates text rubrics, not formatted tables. You will need to format the output into a table in your word processor or LMS before use. The structure is provided; the formatting is yours to apply. To plan the lesson that introduces the assignment and rubric, the <Link href="/lesson-plan-generator" className="text-brand-700 hover:underline">Lesson Plan Generator</Link> builds a complete lesson with objectives, activities, and assessment built in.
+          The tool generates text rubrics, not formatted tables. You will need to format the output into a table in your word processor or LMS before use. The structure is provided; the formatting is yours to apply. To plan the lesson that introduces the assignment and rubric, the <Link href="/lesson-plan-generator" className="text-brand-700 underline">Lesson Plan Generator</Link> builds a complete lesson with objectives, activities, and assessment built in.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          No student data is needed to build a rubric. Enter only your assignment type, grade, subject, and settings. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Explore <Link href="/" className="text-brand-700 hover:underline">all free tools on GogyAI</Link> for the complete set of assessment, planning, and communication tools available to educators at no cost.
+          No student data is needed to build a rubric. Enter only your assignment type, grade, subject, and settings. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Explore <Link href="/" className="text-brand-700 underline">all free tools on GogyAI</Link> for the complete set of assessment, planning, and communication tools available to educators at no cost.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -214,7 +214,7 @@ export default function RubricBuilderPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

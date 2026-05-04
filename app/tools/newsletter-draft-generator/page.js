@@ -96,7 +96,7 @@ export default function NewsletterDraftGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Newsletter Draft Generator</h1>
-        <p className="text-slate-500 mb-6">Generate a complete classroom newsletter — with all sections — ready to copy, send, or print in minutes.</p>
+        <p className="text-slate-600 mb-6">Generate a complete classroom newsletter — with all sections — ready to copy, send, or print in minutes.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="newsletter-draft-generator" />
       </section>
 
@@ -180,12 +180,12 @@ export default function NewsletterDraftGeneratorPage() {
           The AI generates complete prose text — not a visually designed newsletter with columns, images, or branding. The output is clean, copyable text that you paste into your preferred design tool, word processor, or email client. For visual formatting, use a free newsletter template in Canva, Google Docs, or your school&apos;s communication platform.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The &quot;What We&apos;re Learning&quot; section generates contextually appropriate content based on grade level — but it doesn&apos;t know your specific curriculum. Review this section carefully and replace AI-generated curriculum details with what your class is actually doing. This is the section most in need of teacher personalization. For direct parent outreach about individual student progress or concerns, the <Link href="/parent-email-writer" className="text-brand-700 hover:underline">Parent Email Writer</Link> generates professional emails for any communication purpose. For trips that need a formal permission slip alongside the newsletter announcement, the <Link href="/field-trip-permission-letter-writer" className="text-brand-700 hover:underline">Field Trip Permission Letter Writer</Link> generates a complete letter with cost, logistics, and sign-off section.
+          The &quot;What We&apos;re Learning&quot; section generates contextually appropriate content based on grade level — but it doesn&apos;t know your specific curriculum. Review this section carefully and replace AI-generated curriculum details with what your class is actually doing. This is the section most in need of teacher personalization. For direct parent outreach about individual student progress or concerns, the <Link href="/parent-email-writer" className="text-brand-700 underline">Parent Email Writer</Link> generates professional emails for any communication purpose. For trips that need a formal permission slip alongside the newsletter announcement, the <Link href="/field-trip-permission-letter-writer" className="text-brand-700 underline">Field Trip Permission Letter Writer</Link> generates a complete letter with cost, logistics, and sign-off section.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Do not enter student names into the announcement or events fields. Use general descriptions. GogyAI stores no personal information. Inputs are used only during your session and are not retained. FERPA protections apply to any content that references identifiable student information — keep newsletter content at the class level, not the individual student level. Browse <Link href="/" className="text-brand-700 hover:underline">all 30 free AI teaching tools on GogyAI</Link> for the complete set of communication, planning, and assessment tools.
+          Do not enter student names into the announcement or events fields. Use general descriptions. GogyAI stores no personal information. Inputs are used only during your session and are not retained. FERPA protections apply to any content that references identifiable student information — keep newsletter content at the class level, not the individual student level. Browse <Link href="/" className="text-brand-700 underline">all 30 free AI teaching tools on GogyAI</Link> for the complete set of communication, planning, and assessment tools.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -214,7 +214,7 @@ export default function NewsletterDraftGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

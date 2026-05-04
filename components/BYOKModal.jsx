@@ -22,7 +22,7 @@ export default function BYOKModal({ onClose, onSave }) {
           href="https://aistudio.google.com/app/apikey"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-brand-700 font-medium hover:underline mb-4"
+          className="inline-block text-brand-700 font-medium underline mb-4"
         >
           Get your free Gemini API key →
         </a>
@@ -38,7 +38,7 @@ export default function BYOKModal({ onClose, onSave }) {
           placeholder="Paste your Gemini API key here"
           className="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 mb-4"
         />
-        <p className="text-xs text-slate-500 mb-4">
+        <p className="text-xs text-slate-600 mb-4">
           🔒 Your key is stored only in your browser. We never see it.
         </p>
         <div className="flex gap-3">

@@ -17,7 +17,7 @@ export default function TermsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">Terms of Service</h1>
-        <p className="text-slate-500 text-sm mb-8">Last updated: May 2025</p>
+        <p className="text-slate-600 text-sm mb-8">Last updated: May 2025</p>
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold text-slate-800 mb-3">Acceptable Use</h2>

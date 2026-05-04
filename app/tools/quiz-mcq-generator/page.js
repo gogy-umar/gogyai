@@ -104,7 +104,7 @@ export default function QuizMcqGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Quiz &amp; MCQ Generator</h1>
-        <p className="text-slate-500 mb-6">Generate a complete quiz — multiple choice, true/false, or mixed — with an answer key, in seconds.</p>
+        <p className="text-slate-600 mb-6">Generate a complete quiz — multiple choice, true/false, or mixed — with an answer key, in seconds.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="quiz-mcq-generator" />
       </section>
 
@@ -190,15 +190,15 @@ export default function QuizMcqGeneratorPage() {
           AI-generated quizzes reflect general curriculum knowledge, not your specific unit&apos;s taught content. Questions may cover aspects of a topic you haven&apos;t reached yet, or miss the specific angle you emphasized in class. Always review against your lesson materials before use.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The tool does not generate questions with images, diagrams, or data tables. For science assessments that require graph interpretation or labeled diagrams, you&apos;ll need to add those elements manually. The AI provides the question text and answer structure; visuals are your responsibility. For quick end-of-lesson checks that don&apos;t require a full quiz structure, the <Link href="/exit-ticket-creator" className="text-brand-700 hover:underline">Exit Ticket Creator</Link> generates targeted formative prompts students can answer in three to five minutes.
+          The tool does not generate questions with images, diagrams, or data tables. For science assessments that require graph interpretation or labeled diagrams, you&apos;ll need to add those elements manually. The AI provides the question text and answer structure; visuals are your responsibility. For quick end-of-lesson checks that don&apos;t require a full quiz structure, the <Link href="/exit-ticket-creator" className="text-brand-700 underline">Exit Ticket Creator</Link> generates targeted formative prompts students can answer in three to five minutes.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI quiz questions are not psychometrically validated items. They are not suitable as sole instruments for high-stakes decisions. Use them as formative checks, review tools, and practice materials. When you need a scoring guide for open-ended assessments rather than a quiz, the <Link href="/rubric-builder" className="text-brand-700 hover:underline">Rubric Builder</Link> generates analytic rubrics with criteria and performance descriptors for any assignment type.
+          AI quiz questions are not psychometrically validated items. They are not suitable as sole instruments for high-stakes decisions. Use them as formative checks, review tools, and practice materials. When you need a scoring guide for open-ended assessments rather than a quiz, the <Link href="/rubric-builder" className="text-brand-700 underline">Rubric Builder</Link> generates analytic rubrics with criteria and performance descriptors for any assignment type.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          No student data is needed to generate a quiz. Enter only your subject, topic, and settings. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Visit <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s suite of free educator tools</Link> to find all 30 assessment, planning, and communication tools available free to teachers.
+          No student data is needed to generate a quiz. Enter only your subject, topic, and settings. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Visit <Link href="/" className="text-brand-700 underline">GogyAI&apos;s suite of free educator tools</Link> to find all 30 assessment, planning, and communication tools available free to teachers.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -227,7 +227,7 @@ export default function QuizMcqGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

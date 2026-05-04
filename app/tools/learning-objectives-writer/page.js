@@ -78,7 +78,7 @@ export default function LearningObjectivesWriterPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Learning Objectives Writer</h1>
-        <p className="text-slate-500 mb-6">Write precise, measurable SMART learning objectives with the right Bloom&apos;s Taxonomy action verbs.</p>
+        <p className="text-slate-600 mb-6">Write precise, measurable SMART learning objectives with the right Bloom&apos;s Taxonomy action verbs.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="learning-objectives-writer" />
       </section>
 
@@ -146,12 +146,12 @@ export default function LearningObjectivesWriterPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI-generated objectives don&apos;t include standard codes automatically. You must match the objective language to your relevant standards (CCSS, NGSS, state-specific) after generation. The AI also doesn&apos;t know your students&apos; current performance level — the objectives are written at grade level unless you specify otherwise. Once your objectives are set, use the <Link href="/lesson-plan-generator" className="text-brand-700 hover:underline">Lesson Plan Generator</Link> to build a complete lesson around them. To create questions that assess each objective at the right cognitive level, the <Link href="/blooms-taxonomy-question-generator" className="text-brand-700 hover:underline">Bloom&apos;s Taxonomy Question Generator</Link> produces questions matched to the same Bloom&apos;s level.
+          AI-generated objectives don&apos;t include standard codes automatically. You must match the objective language to your relevant standards (CCSS, NGSS, state-specific) after generation. The AI also doesn&apos;t know your students&apos; current performance level — the objectives are written at grade level unless you specify otherwise. Once your objectives are set, use the <Link href="/lesson-plan-generator" className="text-brand-700 underline">Lesson Plan Generator</Link> to build a complete lesson around them. To create questions that assess each objective at the right cognitive level, the <Link href="/blooms-taxonomy-question-generator" className="text-brand-700 underline">Bloom&apos;s Taxonomy Question Generator</Link> produces questions matched to the same Bloom&apos;s level.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          No student data is needed to use this tool. GogyAI stores no personal information. Your inputs are used only to generate your objectives and are not retained after the session. Discover <Link href="/" className="text-brand-700 hover:underline">all 30 free AI teaching tools on GogyAI</Link> covering lesson planning, assessment, communication, and classroom management.
+          No student data is needed to use this tool. GogyAI stores no personal information. Your inputs are used only to generate your objectives and are not retained after the session. Discover <Link href="/" className="text-brand-700 underline">all 30 free AI teaching tools on GogyAI</Link> covering lesson planning, assessment, communication, and classroom management.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -160,7 +160,7 @@ export default function LearningObjectivesWriterPage() {
             { q: "What is Bloom's Taxonomy and why does it matter for objectives?", a: "Bloom's Taxonomy classifies learning into six cognitive levels: Remember, Understand, Apply, Analyze, Evaluate, and Create. Writing objectives at specific levels ensures you're targeting the right depth of thinking for your lesson and assessment." },
             { q: 'What makes a learning objective measurable?', a: 'A measurable objective uses an observable action verb (identify, calculate, compare) rather than vague terms like "understand." It describes what evidence will show that learning occurred.' },
             { q: 'How many learning objectives should a lesson have?', a: 'Most single lessons work best with 2–4 objectives. More than 4 often means the lesson covers too much ground.' },
-            { q: 'Can I use AI-generated objectives on an IEP?', a: <>AI objectives are drafting starting points only. IEP goals require specific legal language and review by qualified special education professionals. Use the <Link href="/iep-goal-writer" className="text-brand-700 hover:underline">IEP Goal Writer</Link> for that purpose.</> },
+            { q: 'Can I use AI-generated objectives on an IEP?', a: <>AI objectives are drafting starting points only. IEP goals require specific legal language and review by qualified special education professionals. Use the <Link href="/iep-goal-writer" className="text-brand-700 underline">IEP Goal Writer</Link> for that purpose.</> },
             { q: "What's the difference between a learning objective and a learning outcome?", a: 'Learning objectives describe what teachers plan to teach. Learning outcomes describe what students actually demonstrate. Both should use measurable, observable terms.' },
             { q: 'Does the objectives writer work for higher education?', a: 'Yes. Specify the course level (e.g., "undergraduate introductory") in the subject field and the AI adjusts complexity and verb choices.' },
             { q: 'Is the GogyAI learning objectives writer free?', a: 'Yes, completely free with no account required.' },
@@ -179,7 +179,7 @@ export default function LearningObjectivesWriterPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

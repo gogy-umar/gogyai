@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 prose prose-slate max-w-none">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">Privacy Policy</h1>
-        <p className="text-slate-500 text-sm mb-8">Last updated: May 2025</p>
+        <p className="text-slate-600 text-sm mb-8">Last updated: May 2025</p>
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold text-slate-800 mb-3">Data We Collect</h2>
@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold text-slate-800 mb-3">Contact</h2>
-          <p className="text-slate-600 leading-relaxed">For privacy questions, contact us via the <a href="/contact" className="text-brand-700 hover:underline">Contact page</a>.</p>
+          <p className="text-slate-600 leading-relaxed">For privacy questions, contact us via the <a href="/contact" className="text-brand-700 underline">Contact page</a>.</p>
         </section>
       </div>
     </>

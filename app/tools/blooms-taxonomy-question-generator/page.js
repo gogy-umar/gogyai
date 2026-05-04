@@ -89,7 +89,7 @@ export default function BloomsTaxonomyQuestionGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Bloom&apos;s Taxonomy Question Generator</h1>
-        <p className="text-slate-500 mb-6">Generate questions at every Bloom&apos;s cognitive level — with action verbs, explanations, and suggested response formats.</p>
+        <p className="text-slate-600 mb-6">Generate questions at every Bloom&apos;s cognitive level — with action verbs, explanations, and suggested response formats.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="blooms-taxonomy-question-generator" />
       </section>
 
@@ -170,15 +170,15 @@ export default function BloomsTaxonomyQuestionGeneratorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI-generated questions reflect general curriculum knowledge of your topic — they are not specifically aligned to the exact angle or depth you covered in class. A question at the Analyze level for cellular respiration may analyze a dimension you haven&apos;t covered yet. Review each question against your taught content before use. To write SMART learning objectives at each Bloom&apos;s level before generating questions, the <Link href="/learning-objectives-writer" className="text-brand-700 hover:underline">Learning Objectives Writer</Link> creates measurable objectives your questions can then be matched to.
+          AI-generated questions reflect general curriculum knowledge of your topic — they are not specifically aligned to the exact angle or depth you covered in class. A question at the Analyze level for cellular respiration may analyze a dimension you haven&apos;t covered yet. Review each question against your taught content before use. To write SMART learning objectives at each Bloom&apos;s level before generating questions, the <Link href="/learning-objectives-writer" className="text-brand-700 underline">Learning Objectives Writer</Link> creates measurable objectives your questions can then be matched to.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The tool generates text questions only — questions that require data tables, graphs, or images cannot be fully generated here. For science or math questions requiring visual data, the AI provides the question stem and you supply the visual component. For open-ended prompts at the Analysis and Evaluation levels that work best in discussion rather than written assessment, the <Link href="/discussion-prompt-generator" className="text-brand-700 hover:underline">Discussion Prompt Generator</Link> creates facilitated discussion prompts for any topic.
+          The tool generates text questions only — questions that require data tables, graphs, or images cannot be fully generated here. For science or math questions requiring visual data, the AI provides the question stem and you supply the visual component. For open-ended prompts at the Analysis and Evaluation levels that work best in discussion rather than written assessment, the <Link href="/discussion-prompt-generator" className="text-brand-700 underline">Discussion Prompt Generator</Link> creates facilitated discussion prompts for any topic.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          No student data is needed to use this tool. Enter only your subject, grade, topic, and level settings. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Find every free planning and assessment tool at <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s library of AI tools for educators</Link>.
+          No student data is needed to use this tool. Enter only your subject, grade, topic, and level settings. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Find every free planning and assessment tool at <Link href="/" className="text-brand-700 underline">GogyAI&apos;s library of AI tools for educators</Link>.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -207,7 +207,7 @@ export default function BloomsTaxonomyQuestionGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

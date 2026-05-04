@@ -116,7 +116,7 @@ export default function StudentFeedbackWriterPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Student Feedback Writer</h1>
-        <p className="text-slate-500 mb-6">Generate personalized, constructive feedback for any assignment — with strengths, improvement areas, and a clear priority next step.</p>
+        <p className="text-slate-600 mb-6">Generate personalized, constructive feedback for any assignment — with strengths, improvement areas, and a clear priority next step.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="student-feedback-writer" />
       </section>
 
@@ -195,15 +195,15 @@ export default function StudentFeedbackWriterPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          This tool generates feedback based on your descriptions — it cannot read the actual student assignment. For essay feedback that references specific passages from student writing, use the <Link href="/essay-feedback-generator" className="text-brand-700 hover:underline">Essay Feedback Generator</Link>, which accepts the full essay text and generates feedback with direct references to the student&apos;s writing. This tool is for generating feedback from teacher observations across any assignment type.
+          This tool generates feedback based on your descriptions — it cannot read the actual student assignment. For essay feedback that references specific passages from student writing, use the <Link href="/essay-feedback-generator" className="text-brand-700 underline">Essay Feedback Generator</Link>, which accepts the full essay text and generates feedback with direct references to the student&apos;s writing. This tool is for generating feedback from teacher observations across any assignment type.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The AI also doesn&apos;t know the individual student&apos;s history, learning needs, or emotional state. For students with IEPs or significant learning differences, review the tone and language of any generated feedback against their specific needs and any documented communication guidelines in their support plan. For standardized scoring that makes your assessment criteria visible to both you and your students, the <Link href="/rubric-builder" className="text-brand-700 hover:underline">Rubric Builder</Link> generates analytic rubrics for any assignment type.
+          The AI also doesn&apos;t know the individual student&apos;s history, learning needs, or emotional state. For students with IEPs or significant learning differences, review the tone and language of any generated feedback against their specific needs and any documented communication guidelines in their support plan. For standardized scoring that makes your assessment criteria visible to both you and your students, the <Link href="/rubric-builder" className="text-brand-700 underline">Rubric Builder</Link> generates analytic rubrics for any assignment type.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Do not enter student names or identifying information into this tool. Describe strengths and growth areas using general observational language. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Add the student&apos;s name to the feedback after generating, in your LMS or word processor. Explore <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s complete teacher toolkit</Link> for all 30 free tools covering assessment, feedback, planning, and communication.
+          Do not enter student names or identifying information into this tool. Describe strengths and growth areas using general observational language. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Add the student&apos;s name to the feedback after generating, in your LMS or word processor. Explore <Link href="/" className="text-brand-700 underline">GogyAI&apos;s complete teacher toolkit</Link> for all 30 free tools covering assessment, feedback, planning, and communication.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -232,7 +232,7 @@ export default function StudentFeedbackWriterPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

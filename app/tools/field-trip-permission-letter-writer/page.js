@@ -94,7 +94,7 @@ export default function FieldTripPermissionLetterWriterPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Field Trip Permission Letter Writer</h1>
-        <p className="text-slate-500 mb-6">Generate a complete, professional permission letter with parent signature line, emergency contact section, and payment slip.</p>
+        <p className="text-slate-600 mb-6">Generate a complete, professional permission letter with parent signature line, emergency contact section, and payment slip.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="field-trip-permission-letter-writer" />
       </section>
 
@@ -170,15 +170,15 @@ export default function FieldTripPermissionLetterWriterPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The generated letter uses a general template. Your district may have required formatting, specific consent language, or mandatory sections not included in the generated version. It is a starting draft — administrative review before distribution is essential, and the <Link href="/parent-email-writer" className="text-brand-700 hover:underline">Parent Email Writer</Link> can help you follow up with families who haven&apos;t returned permission slips.
+          The generated letter uses a general template. Your district may have required formatting, specific consent language, or mandatory sections not included in the generated version. It is a starting draft — administrative review before distribution is essential, and the <Link href="/parent-email-writer" className="text-brand-700 underline">Parent Email Writer</Link> can help you follow up with families who haven&apos;t returned permission slips.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The tool cannot generate district-specific waiver or liability language, which varies by location and legal jurisdiction. This language must come from your district's existing templates or legal department — while you prepare the logistical documents, the <Link href="/lesson-plan-generator" className="text-brand-700 hover:underline">Lesson Plan Generator</Link> can help you build the pre-trip and post-trip lessons that frame the field trip experience.
+          The tool cannot generate district-specific waiver or liability language, which varies by location and legal jurisdiction. This language must come from your district's existing templates or legal department — while you prepare the logistical documents, the <Link href="/lesson-plan-generator" className="text-brand-700 underline">Lesson Plan Generator</Link> can help you build the pre-trip and post-trip lessons that frame the field trip experience.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Permission letter inputs contain no student data. Enter trip information only — not student names or medical information. GogyAI stores no personal information. Student medical information collected via permission slips must be stored securely at school, shared only with adults who need it for student safety on the trip, and handled according to FERPA and your district's health record policies. See <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s complete teacher toolkit</Link> for more free tools to support every stage of trip planning.
+          Permission letter inputs contain no student data. Enter trip information only — not student names or medical information. GogyAI stores no personal information. Student medical information collected via permission slips must be stored securely at school, shared only with adults who need it for student safety on the trip, and handled according to FERPA and your district's health record policies. See <Link href="/" className="text-brand-700 underline">GogyAI&apos;s complete teacher toolkit</Link> for more free tools to support every stage of trip planning.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -206,7 +206,7 @@ export default function FieldTripPermissionLetterWriterPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

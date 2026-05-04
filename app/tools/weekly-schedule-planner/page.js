@@ -93,7 +93,7 @@ export default function WeeklySchedulePlannerPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Weekly Schedule Planner</h1>
-        <p className="text-slate-500 mb-6">Generate a structured weekly classroom schedule with time blocks, subject rotation, and scheduling rationale.</p>
+        <p className="text-slate-600 mb-6">Generate a structured weekly classroom schedule with time blocks, subject rotation, and scheduling rationale.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="weekly-schedule-planner" />
       </section>
 
@@ -168,15 +168,15 @@ export default function WeeklySchedulePlannerPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The tool generates a generic draft based on established scheduling principles. It cannot account for school-specific non-standard days, assemblies, testing weeks, or district mandates for minimum instructional minutes per subject. Treat the output as a starting framework and adjust for your school's specific calendar, then use the <Link href="/lesson-plan-generator" className="text-brand-700 hover:underline">Lesson Plan Generator</Link> to fill each subject block with detailed instruction.
+          The tool generates a generic draft based on established scheduling principles. It cannot account for school-specific non-standard days, assemblies, testing weeks, or district mandates for minimum instructional minutes per subject. Treat the output as a starting framework and adjust for your school's specific calendar, then use the <Link href="/lesson-plan-generator" className="text-brand-700 underline">Lesson Plan Generator</Link> to fill each subject block with detailed instruction.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          For secondary schools with period-based scheduling driven by the master schedule, this tool is less applicable — secondary schedule is typically set institutionally, not by individual teachers. It is most useful for self-contained elementary teachers who build their own daily schedule — and pairs naturally with the <Link href="/substitute-teacher-plan-writer" className="text-brand-700 hover:underline">Substitute Teacher Plan Writer</Link> for coverage days.
+          For secondary schools with period-based scheduling driven by the master schedule, this tool is less applicable — secondary schedule is typically set institutionally, not by individual teachers. It is most useful for self-contained elementary teachers who build their own daily schedule — and pairs naturally with the <Link href="/substitute-teacher-plan-writer" className="text-brand-700 underline">Substitute Teacher Plan Writer</Link> for coverage days.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Weekly schedule inputs contain no student data. Do not include student names or identifying information. GogyAI stores no personal information — inputs are used solely to generate your schedule. Browse <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s suite of free educator tools</Link> for more classroom planning resources.
+          Weekly schedule inputs contain no student data. Do not include student names or identifying information. GogyAI stores no personal information — inputs are used solely to generate your schedule. Browse <Link href="/" className="text-brand-700 underline">GogyAI&apos;s suite of free educator tools</Link> for more classroom planning resources.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -204,7 +204,7 @@ export default function WeeklySchedulePlannerPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

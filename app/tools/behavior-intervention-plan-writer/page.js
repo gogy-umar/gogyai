@@ -92,7 +92,7 @@ export default function BehaviorInterventionPlanWriterPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Behavior Intervention Plan Writer</h1>
-        <p className="text-slate-500 mb-6">Generate a structured BIP framework with antecedents, interventions, reinforcement strategies, and a monitoring plan.</p>
+        <p className="text-slate-600 mb-6">Generate a structured BIP framework with antecedents, interventions, reinforcement strategies, and a monitoring plan.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="behavior-intervention-plan-writer" />
       </section>
 
@@ -170,15 +170,15 @@ export default function BehaviorInterventionPlanWriterPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI-generated BIPs are planning frameworks, not formal behavioral assessments. A Functional Behavior Assessment (FBA) — which involves direct observation, data collection, and interview protocols — is required before any formal BIP for a student with an IEP. The AI cannot conduct an FBA; it can only structure intervention ideas based on the information you provide. For students who need formally documented behavioral goals as part of an IEP, the <Link href="/iep-goal-writer" className="text-brand-700 hover:underline">IEP Goal Writer</Link> generates SMART behavior goals with short-term objectives and progress monitoring guidance.
+          AI-generated BIPs are planning frameworks, not formal behavioral assessments. A Functional Behavior Assessment (FBA) — which involves direct observation, data collection, and interview protocols — is required before any formal BIP for a student with an IEP. The AI cannot conduct an FBA; it can only structure intervention ideas based on the information you provide. For students who need formally documented behavioral goals as part of an IEP, the <Link href="/iep-goal-writer" className="text-brand-700 underline">IEP Goal Writer</Link> generates SMART behavior goals with short-term objectives and progress monitoring guidance.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          For students with significant behavioral challenges, including those with emotional or behavioral disabilities, the BIP process must involve specialists. Use the AI output as a preliminary thinking tool, not as a replacement for the full multidisciplinary process. For class-wide behavioral expectations that support all students, the <Link href="/classroom-rules-generator" className="text-brand-700 hover:underline">Classroom Rules Generator</Link> creates positively-framed rules with rationale and implementation strategies.
+          For students with significant behavioral challenges, including those with emotional or behavioral disabilities, the BIP process must involve specialists. Use the AI output as a preliminary thinking tool, not as a replacement for the full multidisciplinary process. For class-wide behavioral expectations that support all students, the <Link href="/classroom-rules-generator" className="text-brand-700 underline">Classroom Rules Generator</Link> creates positively-framed rules with rationale and implementation strategies.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Never include real student names, IDs, disability diagnoses, or other identifying information in your inputs. Describe behaviors generically: "a 4th-grade student" rather than a name. GogyAI stores no personal information — inputs are used solely to generate the BIP framework. Find all free special education and classroom management tools at <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s full collection of free tools</Link>.
+          Never include real student names, IDs, disability diagnoses, or other identifying information in your inputs. Describe behaviors generically: "a 4th-grade student" rather than a name. GogyAI stores no personal information — inputs are used solely to generate the BIP framework. Find all free special education and classroom management tools at <Link href="/" className="text-brand-700 underline">GogyAI&apos;s full collection of free tools</Link>.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           FERPA requires that student behavioral records — including formal BIPs — be treated as education records with all associated privacy protections. Any AI-generated draft must be kept within your school's document management system and shared only with authorized personnel.
@@ -209,7 +209,7 @@ export default function BehaviorInterventionPlanWriterPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

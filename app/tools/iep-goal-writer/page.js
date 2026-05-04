@@ -100,7 +100,7 @@ export default function IepGoalWriterPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI IEP Goal Writer</h1>
-        <p className="text-slate-500 mb-6">Generate SMART IEP goals with measurable criteria, conditions, and short-term objectives as a professional drafting starting point.</p>
+        <p className="text-slate-600 mb-6">Generate SMART IEP goals with measurable criteria, conditions, and short-term objectives as a professional drafting starting point.</p>
 
         {/* Prominent professional review disclaimer */}
         <div className="bg-amber-50 border border-amber-300 rounded-xl p-4 mb-6">
@@ -201,18 +201,18 @@ export default function IepGoalWriterPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          This tool does not produce legally compliant IEP documents. AI-generated goals must not be used in any official IEP without full team review, individualization, and professional approval. IDEA requires IEP goals to reflect the unique needs of the individual student as determined by the team — a legal standard that an AI tool cannot meet without human professional oversight. For planning classroom activities that serve the full range of learners including those with IEPs, the <Link href="/differentiated-instruction-planner" className="text-brand-700 hover:underline">Differentiated Instruction Planner</Link> generates tiered activities aligned to any lesson objective.
+          This tool does not produce legally compliant IEP documents. AI-generated goals must not be used in any official IEP without full team review, individualization, and professional approval. IDEA requires IEP goals to reflect the unique needs of the individual student as determined by the team — a legal standard that an AI tool cannot meet without human professional oversight. For planning classroom activities that serve the full range of learners including those with IEPs, the <Link href="/differentiated-instruction-planner" className="text-brand-700 underline">Differentiated Instruction Planner</Link> generates tiered activities aligned to any lesson objective.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           The tool does not know your district&apos;s specific IEP goal format, your state&apos;s required language conventions, or your school&apos;s progress monitoring tools. Generated goals follow general SMART goal conventions and will require adjustment to meet local format requirements. Check your district&apos;s IEP writing guidelines before finalizing any generated goal.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          For behavior goals, the tool generates goals aligned with general behavior intervention frameworks. For students with significant behavioral needs requiring a Functional Behavior Assessment (FBA) or <Link href="/behavior-intervention-plan-writer" className="text-brand-700 hover:underline">Behavior Intervention Plan</Link>, work with your school psychologist or behavior specialist — AI-generated behavior goals cannot substitute for that professional assessment process.
+          For behavior goals, the tool generates goals aligned with general behavior intervention frameworks. For students with significant behavioral needs requiring a Functional Behavior Assessment (FBA) or <Link href="/behavior-intervention-plan-writer" className="text-brand-700 underline">Behavior Intervention Plan</Link>, work with your school psychologist or behavior specialist — AI-generated behavior goals cannot substitute for that professional assessment process.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Student Confidentiality</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          IEP documents are among the most sensitive records a school holds — protected by both FERPA and IDEA. Do not enter student names, ID numbers, diagnoses, school names, or any identifying information into this tool. Describe present performance levels using observational and assessment language only — the same information you would include in an anonymized case study. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Find the full range of special education and classroom planning tools at the <Link href="/" className="text-brand-700 hover:underline">free AI tools library on GogyAI</Link>.
+          IEP documents are among the most sensitive records a school holds — protected by both FERPA and IDEA. Do not enter student names, ID numbers, diagnoses, school names, or any identifying information into this tool. Describe present performance levels using observational and assessment language only — the same information you would include in an anonymized case study. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Find the full range of special education and classroom planning tools at the <Link href="/" className="text-brand-700 underline">free AI tools library on GogyAI</Link>.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           Check your school district&apos;s AI use policy before incorporating any AI tool into IEP-related workflows. Many districts have specific guidance on AI tools in special education contexts, given the sensitivity of student records and the legal requirements of IDEA.
@@ -244,7 +244,7 @@ export default function IepGoalWriterPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

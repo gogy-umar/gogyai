@@ -93,7 +93,7 @@ export default function DifferentiatedInstructionPlannerPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Differentiated Instruction Planner</h1>
-        <p className="text-slate-500 mb-6">Generate targeted activities for every learner in your classroom — advanced, struggling, ELL, and mixed groups.</p>
+        <p className="text-slate-600 mb-6">Generate targeted activities for every learner in your classroom — advanced, struggling, ELL, and mixed groups.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="differentiated-instruction-planner" />
       </section>
 
@@ -181,10 +181,10 @@ export default function DifferentiatedInstructionPlannerPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          This tool does not know your specific students&apos; IEP goals, language proficiency levels, or documented learning disabilities. The activities it generates are designed for typical learner profiles within each group — not individualized to a specific child. For students with IEPs, the generated activities are a starting framework that must be reviewed against each student&apos;s specific goals and legal mandates. For formally documented SMART goals tied to a student&apos;s present performance level, use the <Link href="/iep-goal-writer" className="text-brand-700 hover:underline">IEP Goal Writer</Link>.
+          This tool does not know your specific students&apos; IEP goals, language proficiency levels, or documented learning disabilities. The activities it generates are designed for typical learner profiles within each group — not individualized to a specific child. For students with IEPs, the generated activities are a starting framework that must be reviewed against each student&apos;s specific goals and legal mandates. For formally documented SMART goals tied to a student&apos;s present performance level, use the <Link href="/iep-goal-writer" className="text-brand-700 underline">IEP Goal Writer</Link>.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The tool also does not replace the professional judgment of a special education teacher or an ELL specialist. Use those colleagues as reviewers when differentiated activities will be used in formal intervention settings. AI supports planning; it does not replace professional expertise. To build the broader lesson that frames these differentiated activities, the <Link href="/lesson-plan-generator" className="text-brand-700 hover:underline">Lesson Plan Generator</Link> provides a complete lesson structure you can embed the tiered tasks within.
+          The tool also does not replace the professional judgment of a special education teacher or an ELL specialist. Use those colleagues as reviewers when differentiated activities will be used in formal intervention settings. AI supports planning; it does not replace professional expertise. To build the broader lesson that frames these differentiated activities, the <Link href="/lesson-plan-generator" className="text-brand-700 underline">Lesson Plan Generator</Link> provides a complete lesson structure you can embed the tiered tasks within.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
@@ -192,7 +192,7 @@ export default function DifferentiatedInstructionPlannerPage() {
           Do not enter student names, IDs, diagnoses, or any personally identifying information into this tool. FERPA protections apply to student education records, and this tool is not a student records system. Accommodation types can be entered generically (e.g., &quot;extended time&quot;) without identifying which specific student holds that accommodation.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          GogyAI stores no personal information. Inputs are used only to generate your plan during the session and are not retained afterward. Browse <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s complete teacher toolkit</Link> for the full range of planning, assessment, and special education support tools available free to educators.
+          GogyAI stores no personal information. Inputs are used only to generate your plan during the session and are not retained afterward. Browse <Link href="/" className="text-brand-700 underline">GogyAI&apos;s complete teacher toolkit</Link> for the full range of planning, assessment, and special education support tools available free to educators.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -221,7 +221,7 @@ export default function DifferentiatedInstructionPlannerPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

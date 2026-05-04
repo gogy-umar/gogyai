@@ -67,7 +67,7 @@ export default function UnitPlanCreatorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Unit Plan Creator</h1>
-        <p className="text-slate-500 mb-6">Generate a complete week-by-week unit plan for any subject and grade level.</p>
+        <p className="text-slate-600 mb-6">Generate a complete week-by-week unit plan for any subject and grade level.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="unit-plan-creator" />
       </section>
 

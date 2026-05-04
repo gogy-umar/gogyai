@@ -100,7 +100,7 @@ export default function ClassroomRulesGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Classroom Rules Generator</h1>
-        <p className="text-slate-500 mb-6">Generate age-appropriate classroom rules with student-friendly language and rationale for each rule.</p>
+        <p className="text-slate-600 mb-6">Generate age-appropriate classroom rules with student-friendly language and rationale for each rule.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="classroom-rules-generator" />
       </section>
 
@@ -178,15 +178,15 @@ export default function ClassroomRulesGeneratorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI-generated rules do not account for your school's existing behavioral framework. Many schools use PBIS (Positive Behavioral Interventions and Supports), Restorative Practices, or other structured management systems. Your classroom rules must align with your school's system — adjust the generated rules to fit within that framework rather than replacing it. For students who consistently challenge those rules, the <Link href="/behavior-intervention-plan-writer" className="text-brand-700 hover:underline">Behavior Intervention Plan Writer</Link> generates individualized intervention frameworks with replacement behaviors and monitoring strategies.
+          AI-generated rules do not account for your school's existing behavioral framework. Many schools use PBIS (Positive Behavioral Interventions and Supports), Restorative Practices, or other structured management systems. Your classroom rules must align with your school's system — adjust the generated rules to fit within that framework rather than replacing it. For students who consistently challenge those rules, the <Link href="/behavior-intervention-plan-writer" className="text-brand-700 underline">Behavior Intervention Plan Writer</Link> generates individualized intervention frameworks with replacement behaviors and monitoring strategies.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Rules are necessary but not sufficient for effective classroom management. The implementation tips generated alongside the rules address this — but the teacher's consistent follow-through, relationship-building with students, and responsive adjustment throughout the year are what actually make rules function. To build the student relationships that underpin effective management, the <Link href="/student-interest-survey-creator" className="text-brand-700 hover:underline">Student Interest Survey Creator</Link> generates surveys that surface student preferences, goals, and what they want their teacher to know about them.
+          Rules are necessary but not sufficient for effective classroom management. The implementation tips generated alongside the rules address this — but the teacher's consistent follow-through, relationship-building with students, and responsive adjustment throughout the year are what actually make rules function. To build the student relationships that underpin effective management, the <Link href="/student-interest-survey-creator" className="text-brand-700 underline">Student Interest Survey Creator</Link> generates surveys that surface student preferences, goals, and what they want their teacher to know about them.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Classroom rules inputs contain no student data. Do not include student names or identifying information in your inputs. GogyAI stores no personal information. See all 30 free tools for classroom management, planning, and communication at <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s free AI tools for teachers</Link>.
+          Classroom rules inputs contain no student data. Do not include student names or identifying information in your inputs. GogyAI stores no personal information. See all 30 free tools for classroom management, planning, and communication at <Link href="/" className="text-brand-700 underline">GogyAI&apos;s free AI tools for teachers</Link>.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           Generated rules are general classroom management frameworks. They do not constitute legal behavioral documentation. For formal behavioral plans with legal implications (IEPs, 504 plans), follow your district's designated processes.
@@ -217,7 +217,7 @@ export default function ClassroomRulesGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

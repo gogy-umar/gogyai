@@ -99,7 +99,7 @@ export default function SeatingChartSuggestionToolPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Seating Chart Suggestion Tool</h1>
-        <p className="text-slate-500 mb-6">Get strategic seating arrangement recommendations with rationale, implementation tips, and adjustment guidance.</p>
+        <p className="text-slate-600 mb-6">Get strategic seating arrangement recommendations with rationale, implementation tips, and adjustment guidance.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="seating-chart-suggestion-tool" />
       </section>
 
@@ -176,10 +176,10 @@ export default function SeatingChartSuggestionToolPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The tool cannot produce a literal seating chart with student names placed in specific desks. It provides strategic frameworks that the teacher applies with their knowledge of specific students. For a printable chart with names, use the recommendations to inform a seating tool like Google Sheets, Canva, or a dedicated classroom layout app. To collect data about student preferences and learning styles before finalizing seating, the <Link href="/student-interest-survey-creator" className="text-brand-700 hover:underline">Student Interest Survey Creator</Link> generates surveys that surface how students prefer to learn and work.
+          The tool cannot produce a literal seating chart with student names placed in specific desks. It provides strategic frameworks that the teacher applies with their knowledge of specific students. For a printable chart with names, use the recommendations to inform a seating tool like Google Sheets, Canva, or a dedicated classroom layout app. To collect data about student preferences and learning styles before finalizing seating, the <Link href="/student-interest-survey-creator" className="text-brand-700 underline">Student Interest Survey Creator</Link> generates surveys that surface how students prefer to learn and work.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Seating recommendations cannot account for social dynamics, personality conflicts, or emergent group chemistry that only appear over time. The adjustment triggers section of the output helps identify when a change is needed — but your ongoing observation is the most important signal. For behavioral expectations that govern how students interact within their groups, the <Link href="/classroom-rules-generator" className="text-brand-700 hover:underline">Classroom Rules Generator</Link> creates environment-specific rules with implementation guidance.
+          Seating recommendations cannot account for social dynamics, personality conflicts, or emergent group chemistry that only appear over time. The adjustment triggers section of the output helps identify when a change is needed — but your ongoing observation is the most important signal. For behavioral expectations that govern how students interact within their groups, the <Link href="/classroom-rules-generator" className="text-brand-700 underline">Classroom Rules Generator</Link> creates environment-specific rules with implementation guidance.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
@@ -187,7 +187,7 @@ export default function SeatingChartSuggestionToolPage() {
           Do not enter student names, IDs, disability diagnoses, or other identifying information. Describe accommodation needs in general terms. GogyAI stores no personal information — inputs are used solely to generate seating recommendations.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Accommodation requirements specified in a student's IEP or 504 plan — including seating accommodations — are education records protected by FERPA. The descriptions you enter here should reflect those needs in general terms, not copy specific record language. Explore <Link href="/" className="text-brand-700 hover:underline">all 30 free AI teaching tools on GogyAI</Link> for the full set of classroom management, planning, and communication tools.
+          Accommodation requirements specified in a student's IEP or 504 plan — including seating accommodations — are education records protected by FERPA. The descriptions you enter here should reflect those needs in general terms, not copy specific record language. Explore <Link href="/" className="text-brand-700 underline">all 30 free AI teaching tools on GogyAI</Link> for the full set of classroom management, planning, and communication tools.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -215,7 +215,7 @@ export default function SeatingChartSuggestionToolPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

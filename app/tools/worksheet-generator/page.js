@@ -91,7 +91,7 @@ export default function WorksheetGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Worksheet Generator</h1>
-        <p className="text-slate-500 mb-6">Generate a complete, ready-to-print worksheet with questions and answer key in seconds.</p>
+        <p className="text-slate-600 mb-6">Generate a complete, ready-to-print worksheet with questions and answer key in seconds.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="worksheet-generator" />
       </section>
 
@@ -180,10 +180,10 @@ export default function WorksheetGeneratorPage() {
           AI worksheet generators do not produce formatted, print-ready layouts. The output is text — you'll need to paste it into your preferred document template (Google Docs, Word, Canva, etc.) and apply your school's formatting preferences. The content is done; the design is yours to handle.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Worksheets requiring diagrams, graphs, number lines, or geometric figures cannot be generated as images. The AI will describe what a diagram should contain, but visual elements require you to add them manually. For text-based assessment with multiple questions and an answer key, the <Link href="/quiz-mcq-generator" className="text-brand-700 hover:underline">Quiz MCQ Generator</Link> creates complete quizzes with no visual formatting requirements.
+          Worksheets requiring diagrams, graphs, number lines, or geometric figures cannot be generated as images. The AI will describe what a diagram should contain, but visual elements require you to add them manually. For text-based assessment with multiple questions and an answer key, the <Link href="/quiz-mcq-generator" className="text-brand-700 underline">Quiz MCQ Generator</Link> creates complete quizzes with no visual formatting requirements.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          For highly specialized vocational, AP, or IB content — particularly at the edges of what K-12 covers — review the output carefully. The AI works best within standard curriculum scope and sequence. For language arts content that combines a reading passage with comprehension questions, the <Link href="/reading-comprehension-creator" className="text-brand-700 hover:underline">Reading Comprehension Creator</Link> generates leveled passages tailored to your topic and grade.
+          For highly specialized vocational, AP, or IB content — particularly at the edges of what K-12 covers — review the output carefully. The AI works best within standard curriculum scope and sequence. For language arts content that combines a reading passage with comprehension questions, the <Link href="/reading-comprehension-creator" className="text-brand-700 underline">Reading Comprehension Creator</Link> generates leveled passages tailored to your topic and grade.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
@@ -191,7 +191,7 @@ export default function WorksheetGeneratorPage() {
           Worksheet inputs — subject, grade, topic — contain no student data. Do not include student names or any identifying information in your inputs. GogyAI stores no personal information, and your inputs are used only to generate your worksheet.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          FERPA applies to student education records, not to general curriculum resources. Worksheet generation with topic and grade inputs falls well within standard educational tool use. Check your district's AI tool policy if you're integrating this into formal curriculum development workflows. Discover every free resource creation tool at <Link href="/" className="text-brand-700 hover:underline">GogyAI&apos;s suite of free educator tools</Link>.
+          FERPA applies to student education records, not to general curriculum resources. Worksheet generation with topic and grade inputs falls well within standard educational tool use. Check your district's AI tool policy if you're integrating this into formal curriculum development workflows. Discover every free resource creation tool at <Link href="/" className="text-brand-700 underline">GogyAI&apos;s suite of free educator tools</Link>.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -219,7 +219,7 @@ export default function WorksheetGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

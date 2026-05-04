@@ -101,7 +101,7 @@ export default function EssayFeedbackGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Essay Feedback Generator</h1>
-        <p className="text-slate-500 mb-6">Generate constructive, specific essay feedback — strengths, improvement areas, and a priority next step — in seconds.</p>
+        <p className="text-slate-600 mb-6">Generate constructive, specific essay feedback — strengths, improvement areas, and a priority next step — in seconds.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="essay-feedback-generator" />
       </section>
 
@@ -184,15 +184,15 @@ export default function EssayFeedbackGeneratorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI feedback does not know your rubric criteria, your unit&apos;s specific learning objectives, or your school&apos;s writing standards unless you describe them in the assignment description field. The more context you provide, the more aligned the output. Generic assignment descriptions produce feedback that may emphasize dimensions you&apos;re not currently assessing. To build a formal rubric that defines exactly which dimensions to assess, use the <Link href="/rubric-builder" className="text-brand-700 hover:underline">Rubric Builder</Link> to generate analytic criteria before grading.
+          AI feedback does not know your rubric criteria, your unit&apos;s specific learning objectives, or your school&apos;s writing standards unless you describe them in the assignment description field. The more context you provide, the more aligned the output. Generic assignment descriptions produce feedback that may emphasize dimensions you&apos;re not currently assessing. To build a formal rubric that defines exactly which dimensions to assess, use the <Link href="/rubric-builder" className="text-brand-700 underline">Rubric Builder</Link> to generate analytic criteria before grading.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The AI also cannot assess whether a student&apos;s factual claims are accurate unless those claims involve well-established facts. For content-area essays in history, science, or social studies, verify any feedback that comments on the accuracy of the student&apos;s facts before sharing it. For feedback based on teacher observations across any assignment type — without pasting student text — the <Link href="/student-feedback-writer" className="text-brand-700 hover:underline">Student Feedback Writer</Link> generates structured comments from your own notes.
+          The AI also cannot assess whether a student&apos;s factual claims are accurate unless those claims involve well-established facts. For content-area essays in history, science, or social studies, verify any feedback that comments on the accuracy of the student&apos;s facts before sharing it. For feedback based on teacher observations across any assignment type — without pasting student text — the <Link href="/student-feedback-writer" className="text-brand-700 underline">Student Feedback Writer</Link> generates structured comments from your own notes.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Always remove student names and identifying information before pasting essay text into this tool. FERPA protections apply to student work as part of education records. GogyAI does not store essay text or other inputs after the session ends. As a best practice, follow your district&apos;s AI use policy for any workflow involving student-produced content. See <Link href="/" className="text-brand-700 hover:underline">GogyAI — free tools for teachers</Link> for the full set of assessment and feedback tools available at no cost.
+          Always remove student names and identifying information before pasting essay text into this tool. FERPA protections apply to student work as part of education records. GogyAI does not store essay text or other inputs after the session ends. As a best practice, follow your district&apos;s AI use policy for any workflow involving student-produced content. See <Link href="/" className="text-brand-700 underline">GogyAI — free tools for teachers</Link> for the full set of assessment and feedback tools available at no cost.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -221,7 +221,7 @@ export default function EssayFeedbackGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

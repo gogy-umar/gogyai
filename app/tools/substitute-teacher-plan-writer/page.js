@@ -97,7 +97,7 @@ export default function SubstituteTeacherPlanWriterPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Substitute Teacher Plan Writer</h1>
-        <p className="text-slate-500 mb-6">Generate a complete sub folder — period-by-period instructions, classroom rules, procedures, and emergency information.</p>
+        <p className="text-slate-600 mb-6">Generate a complete sub folder — period-by-period instructions, classroom rules, procedures, and emergency information.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="substitute-teacher-plan-writer" />
       </section>
 
@@ -174,10 +174,10 @@ export default function SubstituteTeacherPlanWriterPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The generated sub plan uses placeholder language for school-specific emergency procedures. Your school's fire drill routes, lockdown procedures, and medical emergency protocols must be filled in by you — these vary by building and cannot be generated generically. Use the <Link href="/weekly-schedule-planner" className="text-brand-700 hover:underline">Weekly Schedule Planner</Link> to ensure your sub plan mirrors the schedule your substitute will be following.
+          The generated sub plan uses placeholder language for school-specific emergency procedures. Your school's fire drill routes, lockdown procedures, and medical emergency protocols must be filled in by you — these vary by building and cannot be generated generically. Use the <Link href="/weekly-schedule-planner" className="text-brand-700 underline">Weekly Schedule Planner</Link> to ensure your sub plan mirrors the schedule your substitute will be following.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The AI cannot know your specific students, ongoing behavioral situations, or individualized accommodation needs. The behavior notes and accommodation sections require your direct knowledge — the AI provides the structure; you fill in the specifics, and the <Link href="/classroom-rules-generator" className="text-brand-700 hover:underline">Classroom Rules Generator</Link> can help you articulate clear expectations for the rules section of your sub folder.
+          The AI cannot know your specific students, ongoing behavioral situations, or individualized accommodation needs. The behavior notes and accommodation sections require your direct knowledge — the AI provides the structure; you fill in the specifics, and the <Link href="/classroom-rules-generator" className="text-brand-700 underline">Classroom Rules Generator</Link> can help you articulate clear expectations for the rules section of your sub folder.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
@@ -185,7 +185,7 @@ export default function SubstituteTeacherPlanWriterPage() {
           Do not include student names in your sub plan inputs. Use role descriptors — "one student who requires extended time" or "two students in the front row who tend to distract each other." GogyAI stores no personal information. Student-specific information belongs in sealed, labeled envelopes within the sub folder, not in a general AI-generated document.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          IEP accommodations and 504 plans are FERPA-protected education records. Share these with substitutes through your school's official SPED communication process — not through a general sub folder accessible in your desk drawer. <Link href="/" className="text-brand-700 hover:underline">Explore all free tools on GogyAI</Link> to find more resources for classroom management and lesson planning.
+          IEP accommodations and 504 plans are FERPA-protected education records. Share these with substitutes through your school's official SPED communication process — not through a general sub folder accessible in your desk drawer. <Link href="/" className="text-brand-700 underline">Explore all free tools on GogyAI</Link> to find more resources for classroom management and lesson planning.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -213,7 +213,7 @@ export default function SubstituteTeacherPlanWriterPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>
