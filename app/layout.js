@@ -11,7 +11,6 @@ export const metadata = {
   description: 'Free AI-powered tools for teachers worldwide. Generate lesson plans, quizzes, rubrics, parent emails and more. No login required.',
   openGraph: { siteName: 'GogyAI', type: 'website', locale: 'en_US' },
   robots: { index: true, follow: true },
-  verification: { google: 'WKECbAufAMcoa4I0SF1Eh-9m_mPrYCaxEJoVb7dfpmc' },
 }
 
 const siteSchema = {
@@ -34,6 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
       <head>
+        <meta name="google-site-verification" content="WKECbAufAMcoa4I0SF1Eh-9m_mPrYCaxEJoVb7dfpmc" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }} />

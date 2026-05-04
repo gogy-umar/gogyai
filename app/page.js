@@ -257,7 +257,8 @@ export default function HomePage() {
               alt="Teacher using AI tools to create lesson plans and quizzes"
               width={520}
               height={420}
-              priority
+              loading="eager"
+              fetchPriority="high"
               className="w-full max-w-md lg:max-w-lg drop-shadow-xl"
             />
           </div>
@@ -285,7 +286,7 @@ export default function HomePage() {
       <section id="how-it-works" className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-3">How It Works</h2>
-          <p className="text-slate-500 mb-12 max-w-xl mx-auto">GogyAI is designed to get you from idea to finished content in three simple steps — no technical knowledge required.</p>
+          <p className="text-slate-600 mb-12 max-w-xl mx-auto">GogyAI is designed to get you from idea to finished content in three simple steps — no technical knowledge required.</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {[
               {
@@ -309,7 +310,7 @@ export default function HomePage() {
                   {item.step}
                 </div>
                 <h3 className="font-semibold text-slate-800 mb-2 text-lg">{item.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -321,15 +322,15 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-3">30+ Free Tools Across 5 Categories</h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">Every tool is purpose-built for teachers. Pick a category below or click any tool to start generating content immediately.</p>
+            <p className="text-slate-600 max-w-2xl mx-auto">Every tool is purpose-built for teachers. Pick a category below or click any tool to start generating content immediately.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {CATEGORIES.map(cat => (
               <div key={cat.name} id={cat.slug} className="bg-white rounded-2xl p-6 shadow-sm border border-brand-100 hover:shadow-md transition-shadow">
                 <div className="text-brand-700 mb-3">{cat.icon}</div>
                 <h3 className="font-bold text-slate-800 mb-1">{cat.name}</h3>
-                <p className="text-xs text-slate-400 mb-1">{cat.count} tools</p>
-                <p className="text-xs text-slate-500 mb-4">{cat.desc}</p>
+                <p className="text-xs text-slate-600 mb-1">{cat.count} tools</p>
+                <p className="text-xs text-slate-600 mb-4">{cat.desc}</p>
                 <ul className="space-y-1">
                   {cat.tools.map((tool, i) => (
                     <li key={tool}>
@@ -350,7 +351,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-3">Why Teachers Choose GogyAI</h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">GogyAI is built from the ground up for educators — not generic users. Here is why thousands of teachers use it every day.</p>
+            <p className="text-slate-600 max-w-2xl mx-auto">GogyAI is built from the ground up for educators — not generic users. Here is why thousands of teachers use it every day.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {BENEFITS.map(item => (
@@ -360,7 +361,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-800 mb-1">{item.title}</h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                  <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -373,7 +374,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-3">Most Popular Tools</h2>
-            <p className="text-slate-500 max-w-xl mx-auto">These are the tools teachers reach for most. Each one is free, instant and requires no account.</p>
+            <p className="text-slate-600 max-w-xl mx-auto">These are the tools teachers reach for most. Each one is free, instant and requires no account.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {FEATURED_TOOLS.map(tool => (
@@ -383,7 +384,7 @@ export default function HomePage() {
                 className="group bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all"
               >
                 <h3 className="font-semibold text-slate-800 mb-2 group-hover:text-brand-700 transition-colors">{tool.name}</h3>
-                <p className="text-slate-500 text-sm mb-4 leading-relaxed">{tool.desc}</p>
+                <p className="text-slate-600 text-sm mb-4 leading-relaxed">{tool.desc}</p>
                 <span className="inline-flex items-center gap-1 text-brand-700 text-sm font-medium">
                   Use Tool
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
@@ -399,7 +400,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-3">What Teachers Are Saying</h2>
-            <p className="text-slate-500 max-w-xl mx-auto">Real feedback from educators who use GogyAI to reclaim their time and focus more on teaching.</p>
+            <p className="text-slate-600 max-w-xl mx-auto">Real feedback from educators who use GogyAI to reclaim their time and focus more on teaching.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {TESTIMONIALS.map(t => (
@@ -418,7 +419,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-slate-800">{t.name}</p>
-                    <p className="text-xs text-slate-400">{t.role}</p>
+                    <p className="text-xs text-slate-600">{t.role}</p>
                   </div>
                 </div>
               </div>
@@ -456,13 +457,13 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-3">Frequently Asked Questions</h2>
-            <p className="text-slate-500">Everything you need to know before using GogyAI for the first time.</p>
+            <p className="text-slate-600">Everything you need to know before using GogyAI for the first time.</p>
           </div>
           <div className="space-y-4">
             {FAQS.map(faq => (
               <div key={faq.q} className="bg-white rounded-xl p-6 border border-brand-100 shadow-sm">
                 <h3 className="font-semibold text-slate-800 mb-2">{faq.q}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-slate-600 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
