@@ -26,7 +26,7 @@ export default function Footer() {
               <p className="text-sm text-slate-400 leading-relaxed">
                 Free AI-powered tools for teachers worldwide.
               </p>
-              <p className="text-sm text-slate-500 mt-4">© {year} GogyAI</p>
+              <p className="text-sm text-slate-400 mt-4">© {year} GogyAI</p>
             </div>
 
             {/* Col 2: Quick Links */}
@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
 
           {/* Bottom bar */}
-          <div className="border-t border-slate-700 pt-6 text-center text-sm text-slate-500">
+          <div className="border-t border-slate-700 pt-6 text-center text-sm text-slate-400">
             Made for teachers worldwide 🌍
           </div>
         </div>
