@@ -121,7 +121,7 @@ export default function LessonPlanGeneratorPage() {
       {/* Tool Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Lesson Plan Generator</h1>
-        <p className="text-slate-500 mb-6">Generate a complete, detailed lesson plan in seconds. Fill in your details below.</p>
+        <p className="text-slate-600 mb-6">Generate a complete, detailed lesson plan in seconds. Fill in your details below.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="lesson-plan-generator" />
       </section>
 
@@ -223,13 +223,13 @@ export default function LessonPlanGeneratorPage() {
         {/* Section 8 */}
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI lesson plan generators do not know your specific students. They cannot account for a student with a severe math anxiety, a class that had a disruptive week, or the fact that your Grade 3 students are reading two years above level. The generated plan is a structural framework built on general grade-level expectations — your classroom knowledge must be layered on top. For lessons that need to reach all learners, pair this with the <Link href="/differentiated-instruction-planner" className="text-brand-700 hover:underline">Differentiated Instruction Planner</Link> to generate tiered activities for struggling, advanced, and ELL students.
+          AI lesson plan generators do not know your specific students. They cannot account for a student with a severe math anxiety, a class that had a disruptive week, or the fact that your Grade 3 students are reading two years above level. The generated plan is a structural framework built on general grade-level expectations — your classroom knowledge must be layered on top. For lessons that need to reach all learners, pair this with the <Link href="/differentiated-instruction-planner" className="text-brand-700 underline">Differentiated Instruction Planner</Link> to generate tiered activities for struggling, advanced, and ELL students.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           The tool also does not align automatically to specific state standards (TEKS, CCSS, NGSS, etc.). Objectives are written as educationally sound SMART goals, but standard codes must be added by the teacher. For IB, AP, or specialized curriculum frameworks, treat the output as a starting scaffold that needs framework-specific adjustment.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Highly specialized or advanced content — graduate-level seminars, specific vocational training, or culturally specific pedagogy — may produce generic output. In those cases, use the structure from the AI but write the specific content manually. To plan a sequence of lessons into a complete unit, the <Link href="/unit-plan-creator" className="text-brand-700 hover:underline">Unit Plan Creator</Link> generates a week-by-week framework you can then expand with individual lesson plans.
+          Highly specialized or advanced content — graduate-level seminars, specific vocational training, or culturally specific pedagogy — may produce generic output. In those cases, use the structure from the AI but write the specific content manually. To plan a sequence of lessons into a complete unit, the <Link href="/unit-plan-creator" className="text-brand-700 underline">Unit Plan Creator</Link> generates a week-by-week framework you can then expand with individual lesson plans.
         </p>
 
         {/* Section 9 */}
@@ -238,7 +238,7 @@ export default function LessonPlanGeneratorPage() {
           Do not enter real student names, IDs, or any identifying student information into this tool. Lesson plan inputs (subject, topic, grade) contain no personal data. GogyAI stores no personal information — your inputs are used solely to generate your plan and are not retained. If you use your own API key (BYOK), it is stored only in your browser's local storage and is never transmitted to GogyAI.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          FERPA requires schools to protect student education records. While lesson planning inputs typically contain no student data, check your district's AI use policy before integrating any AI tool into formal school workflows. Most districts have guidance on approved tools — knowing where this tool stands in that framework helps you use it confidently. Browse <Link href="/" className="text-brand-700 hover:underline">GogyAI's free AI tools for teachers</Link> to discover all 30 tools covering lesson planning, assessment, communication, and classroom management.
+          FERPA requires schools to protect student education records. While lesson planning inputs typically contain no student data, check your district's AI use policy before integrating any AI tool into formal school workflows. Most districts have guidance on approved tools — knowing where this tool stands in that framework helps you use it confidently. Browse <Link href="/" className="text-brand-700 underline">GogyAI's free AI tools for teachers</Link> to discover all 30 tools covering lesson planning, assessment, communication, and classroom management.
         </p>
 
         {/* Section 10 — FAQ */}
@@ -259,7 +259,7 @@ export default function LessonPlanGeneratorPage() {
             },
             {
               q: 'Can I use an AI lesson plan generator for special education?',
-              a: <>Yes. The differentiation notes in each plan include support suggestions for struggling learners. For students with IEPs, pair this tool with the <Link href="/differentiated-instruction-planner" className="text-brand-700 hover:underline">Differentiated Instruction Planner</Link> and <Link href="/iep-goal-writer" className="text-brand-700 hover:underline">IEP Goal Writer</Link> for more targeted accommodation planning.</>,
+              a: <>Yes. The differentiation notes in each plan include support suggestions for struggling learners. For students with IEPs, pair this tool with the <Link href="/differentiated-instruction-planner" className="text-brand-700 underline">Differentiated Instruction Planner</Link> and <Link href="/iep-goal-writer" className="text-brand-700 underline">IEP Goal Writer</Link> for more targeted accommodation planning.</>,
             },
             {
               q: 'Is it okay for teachers to use AI to write lesson plans?',
@@ -297,7 +297,7 @@ export default function LessonPlanGeneratorPage() {
               className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all"
             >
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

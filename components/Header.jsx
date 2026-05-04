@@ -66,11 +66,13 @@ const CATEGORIES = [
 function getBreadcrumbs(pathname) {
   if (pathname === '/') return []
   const allTools = CATEGORIES.flatMap(c => c.tools)
-  const tool = allTools.find(t => t.slug === pathname.slice(1))
+  // usePathname() may return the rewritten destination (/tools/slug) during SSR
+  const slug = pathname.startsWith('/tools/') ? pathname.slice(7) : pathname.slice(1)
+  const tool = allTools.find(t => t.slug === slug)
   if (tool) {
     return [
       { name: 'Tools', url: '/#tools' },
-      { name: tool.name, url: pathname },
+      { name: tool.name, url: `/${tool.slug}` },
     ]
   }
   const pageNames = {

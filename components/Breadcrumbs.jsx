@@ -29,7 +29,7 @@ export default function Breadcrumbs({ items = [] }) {
       />
       <nav aria-label="Breadcrumb" className="bg-brand-50 border-b border-brand-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-slate-500">
+          <ol className="flex flex-wrap items-center gap-1 text-sm text-slate-600">
             {allItems.map((item, i) => (
               <li key={item.url} className="flex items-center gap-1">
                 {i > 0 && <span aria-hidden="true">›</span>}
