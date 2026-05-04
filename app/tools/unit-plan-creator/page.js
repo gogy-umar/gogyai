@@ -143,15 +143,15 @@ export default function UnitPlanCreatorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI unit plans are not curriculum maps. They don't show how one unit connects to the previous or next unit in a year-long sequence. For full-year curriculum mapping, use AI-generated units as building blocks within a larger framework you design. To build out individual lessons within the unit, the <Link href="/lesson-plan-generator" className="text-brand-700 hover:underline">Lesson Plan Generator</Link> creates detailed daily plans from any topic or objective.
+          AI unit plans are not curriculum maps. They don't show how one unit connects to the previous or next unit in a year-long sequence. For full-year curriculum mapping, use AI-generated units as building blocks within a larger framework you design. To build out individual lessons within the unit, the <Link href="/lesson-plan-generator" className="text-brand-700 underline">Lesson Plan Generator</Link> creates detailed daily plans from any topic or objective.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Suggested resources will be generic. The AI can't know whether your school has a specific textbook, a maker space, or restricted internet access. All resource suggestions require your substitution with what's actually available. To write precise, measurable objectives for your unit's learning goals, the <Link href="/learning-objectives-writer" className="text-brand-700 hover:underline">Learning Objectives Writer</Link> generates SMART objectives with Bloom's Taxonomy action verbs.
+          Suggested resources will be generic. The AI can't know whether your school has a specific textbook, a maker space, or restricted internet access. All resource suggestions require your substitution with what's actually available. To write precise, measurable objectives for your unit's learning goals, the <Link href="/learning-objectives-writer" className="text-brand-700 underline">Learning Objectives Writer</Link> generates SMART objectives with Bloom's Taxonomy action verbs.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Unit planning inputs contain no student data. Do not include student names or individual student information in your inputs. GogyAI stores no personal information — your inputs are used solely to generate your plan. Explore <Link href="/" className="text-brand-700 hover:underline">GogyAI's full collection of free tools</Link> for lesson planning, assessment, communication, and classroom management tools built for educators.
+          Unit planning inputs contain no student data. Do not include student names or individual student information in your inputs. GogyAI stores no personal information — your inputs are used solely to generate your plan. Explore <Link href="/" className="text-brand-700 underline">GogyAI's full collection of free tools</Link> for lesson planning, assessment, communication, and classroom management tools built for educators.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
@@ -179,7 +179,7 @@ export default function UnitPlanCreatorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-500">{tool.desc}</p>
+              <p className="text-sm text-slate-600">{tool.desc}</p>
             </Link>
           ))}
         </div>

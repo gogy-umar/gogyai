@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
@@ -93,8 +93,14 @@ export default function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const [openCategories, setOpenCategories] = useState({})
   const pathname = usePathname()
-  const breadcrumbs = getBreadcrumbs(pathname)
-  const isHome = pathname === '/'
+  const [breadcrumbs, setBreadcrumbs] = useState([])
+
+  // Defer pathname-dependent rendering to after mount to avoid hydration
+  // mismatches caused by URL rewrites in next.config.mjs (see Next.js docs:
+  // usePathname § "Avoid hydration mismatch with rewrites")
+  useEffect(() => {
+    setBreadcrumbs(getBreadcrumbs(pathname))
+  }, [pathname])
 
   const toggleCategory = (catName) => {
     setOpenCategories(prev => ({ ...prev, [catName]: !prev[catName] }))
@@ -212,8 +218,7 @@ export default function Header() {
         </div>
       )}
 
-      {/* Breadcrumbs — hidden on homepage */}
-      {!isHome && <Breadcrumbs items={breadcrumbs} />}
+      {breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
     </header>
   )
 }
