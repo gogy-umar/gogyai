@@ -38,17 +38,17 @@ const TOOLS = [
 
 export default function sitemap() {
   return [
-    { url: BASE,                          lastModified: LAST_MOD, changeFrequency: 'daily',   priority: 1.0 },
-    { url: `${BASE}/about`,               lastModified: LAST_MOD, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE}/contact`,             lastModified: LAST_MOD, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE}/privacy-policy`,      lastModified: LAST_MOD, changeFrequency: 'yearly',  priority: 0.5 },
-    { url: `${BASE}/terms-of-service`,    lastModified: LAST_MOD, changeFrequency: 'yearly',  priority: 0.5 },
-    { url: `${BASE}/disclaimer`,          lastModified: LAST_MOD, changeFrequency: 'yearly',  priority: 0.5 },
     ...TOOLS.map(slug => ({
       url: `${BASE}/${slug}`,
       lastModified: LAST_MOD,
       changeFrequency: 'weekly',
       priority: 0.9,
     })),
+    { url: BASE,                          lastModified: LAST_MOD, changeFrequency: 'daily',   priority: 1.0 },
+    { url: `${BASE}/about`,               lastModified: LAST_MOD, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/contact`,             lastModified: LAST_MOD, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/privacy-policy`,      lastModified: LAST_MOD, changeFrequency: 'yearly',  priority: 0.5 },
+    { url: `${BASE}/terms-of-service`,    lastModified: LAST_MOD, changeFrequency: 'yearly',  priority: 0.5 },
+    { url: `${BASE}/disclaimer`,          lastModified: LAST_MOD, changeFrequency: 'yearly',  priority: 0.5 },
   ]
 }

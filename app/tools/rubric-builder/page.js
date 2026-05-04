@@ -1,9 +1,9 @@
-ï»¿import ToolForm from '@/components/ToolForm'
+import ToolForm from '@/components/ToolForm'
 import Link from 'next/link'
 import ToolNav from '@/components/ToolNav'
 
 export const metadata = {
-  title: 'Rubric Builder â€” Free AI Tool for Teachers',
+  title: 'Rubric Builder — Free AI Tool for Teachers',
   description: 'Generate complete scoring rubrics with criteria, performance levels, and descriptors. Free AI rubric builder for K-12 teachers. No login required.',
   alternates: { canonical: 'https://gogyai.com/rubric-builder' },
 }
@@ -18,9 +18,9 @@ const FIELDS = [
     label: 'Scoring Scale',
     type: 'select',
     options: [
-      { value: '4-point', label: '4-Point Scale (1â€“4)' },
-      { value: '5-point', label: '5-Point Scale (1â€“5)' },
-      { value: 'percentage', label: 'Percentage (0â€“100%)' },
+      { value: '4-point', label: '4-Point Scale (1–4)' },
+      { value: '5-point', label: '5-Point Scale (1–5)' },
+      { value: 'percentage', label: 'Percentage (0–100%)' },
     ],
     default: '4-point',
   },
@@ -58,7 +58,7 @@ const RELATED = [
 const schemas = {
   webPage: {
     '@context': 'https://schema.org', '@type': 'WebPage',
-    name: 'Rubric Builder â€” GogyAI',
+    name: 'Rubric Builder — GogyAI',
     url: 'https://gogyai.com/rubric-builder',
   },
   software: {
@@ -80,10 +80,10 @@ const schemas = {
     '@context': 'https://schema.org', '@type': 'FAQPage',
     mainEntity: [
       { '@type': 'Question', name: 'What is a rubric and why should teachers use one?', acceptedAnswer: { '@type': 'Answer', text: 'A rubric is a scoring guide that defines quality standards for an assignment through criteria and performance level descriptors. Rubrics benefit teachers by making grading faster and more consistent. They benefit students by clarifying expectations before the work begins, which research consistently links to improved performance.' } },
-      { '@type': 'Question', name: 'What is the difference between analytic and holistic rubrics?', acceptedAnswer: { '@type': 'Answer', text: 'An analytic rubric assesses each criterion separately â€” content, organization, mechanics, for example â€” and provides a score for each. A holistic rubric assesses the overall quality of work in a single score. This generator creates analytic rubrics, which are more informative for feedback and growth.' } },
-      { '@type': 'Question', name: 'How many criteria should a rubric have?', acceptedAnswer: { '@type': 'Answer', text: 'Most effective rubrics have 3â€“6 criteria. Fewer than 3 may miss important dimensions; more than 6 can become unwieldy to use and hard for students to track. The default of 4 criteria covers most assignments well. Adjust based on the complexity of the task.' } },
+      { '@type': 'Question', name: 'What is the difference between analytic and holistic rubrics?', acceptedAnswer: { '@type': 'Answer', text: 'An analytic rubric assesses each criterion separately — content, organization, mechanics, for example — and provides a score for each. A holistic rubric assesses the overall quality of work in a single score. This generator creates analytic rubrics, which are more informative for feedback and growth.' } },
+      { '@type': 'Question', name: 'How many criteria should a rubric have?', acceptedAnswer: { '@type': 'Answer', text: 'Most effective rubrics have 3–6 criteria. Fewer than 3 may miss important dimensions; more than 6 can become unwieldy to use and hard for students to track. The default of 4 criteria covers most assignments well. Adjust based on the complexity of the task.' } },
       { '@type': 'Question', name: 'Which scoring scale should I choose?', acceptedAnswer: { '@type': 'Answer', text: 'The 4-point scale is the most common in K-12 education and aligns to standards-based grading systems. The 5-point scale offers more nuance between proficiency levels. The percentage scale is useful when scores must convert directly to letter grades. Choose the scale that matches your school\'s grading system.' } },
-      { '@type': 'Question', name: 'Should I share the rubric with students before the assignment?', acceptedAnswer: { '@type': 'Answer', text: 'Yes â€” this is one of the clearest research-backed practices in assessment design. Students who see the rubric before working understand the targets more clearly and produce higher-quality work. The generated rubric includes a note on pre-assignment distribution.' } },
+      { '@type': 'Question', name: 'Should I share the rubric with students before the assignment?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — this is one of the clearest research-backed practices in assessment design. Students who see the rubric before working understand the targets more clearly and produce higher-quality work. The generated rubric includes a note on pre-assignment distribution.' } },
       { '@type': 'Question', name: 'Can I use this rubric builder for project-based learning assessments?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Enter the assignment type as your PBL product (e.g., "research presentation," "engineering design prototype," "documentary video") and adjust the number of criteria to cover all relevant dimensions of the project.' } },
       { '@type': 'Question', name: 'How do I make rubric descriptors more specific?', acceptedAnswer: { '@type': 'Answer', text: 'After generating, review each descriptor and replace vague words like "good" or "adequate" with observable, specific language. "Uses three or more supporting pieces of evidence" is better than "uses evidence." The AI provides strong starting language; specificity improves with your subject knowledge.' } },
       { '@type': 'Question', name: 'Is the GogyAI rubric builder free?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, completely free. No account or subscription required.' } },
@@ -109,14 +109,14 @@ export default function RubricBuilderPage() {
             <li>This guide covers what rubrics are, why they matter, and how AI can help you build them efficiently.</li>
             <li>Teachers who assess essays, projects, presentations, and lab reports will benefit most.</li>
             <li>An AI rubric builder generates a complete analytic rubric with criteria, performance level labels, and specific descriptors from your assignment type and settings.</li>
-            <li>Rubrics shared before an assignment consistently improve student performance â€” they define the target, not just measure it.</li>
-            <li>AI rubrics are strong starting drafts â€” review descriptors for specificity and alignment to your grading practices before use.</li>
+            <li>Rubrics shared before an assignment consistently improve student performance — they define the target, not just measure it.</li>
+            <li>AI rubrics are strong starting drafts — review descriptors for specificity and alignment to your grading practices before use.</li>
             <li>No student information should be entered into this tool.</li>
           </ul>
         </div>
 
         <p className="text-slate-700 leading-relaxed mb-4">
-          Writing a rubric from scratch is one of those tasks that seems like it should take 15 minutes and regularly takes an hour. Getting the criteria right â€” not too many, not too few â€” and then writing four performance level descriptors per criterion that are genuinely distinguishable from each other requires careful attention to both the assignment and the grade-level standards. An AI rubric builder handles the structural drafting, giving you a complete, formatted rubric to refine rather than blank cells to fill.
+          Writing a rubric from scratch is one of those tasks that seems like it should take 15 minutes and regularly takes an hour. Getting the criteria right — not too many, not too few — and then writing four performance level descriptors per criterion that are genuinely distinguishable from each other requires careful attention to both the assignment and the grade-level standards. An AI rubric builder handles the structural drafting, giving you a complete, formatted rubric to refine rather than blank cells to fill.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           This guide explains how rubrics work in effective assessment practice, how this tool generates them, and how to refine the output for your classroom.
@@ -127,7 +127,7 @@ export default function RubricBuilderPage() {
           An AI rubric builder takes your assignment type, grade level, subject, number of criteria, and scoring scale, and generates a complete analytic rubric. Each criterion is named, and each performance level (Beginning, Developing, Proficient, Exemplary) is described with specific, observable language that makes scoring decisions defensible and consistent.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The AI identifies the relevant assessment dimensions for your assignment type â€” an essay rubric includes content, organization, evidence use, and mechanics; a science lab report rubric includes procedure accuracy, data recording, analysis, and conclusion writing. The criteria selection is informed by common assessment frameworks for each assignment type at the specified grade level.
+          The AI identifies the relevant assessment dimensions for your assignment type — an essay rubric includes content, organization, evidence use, and mechanics; a science lab report rubric includes procedure accuracy, data recording, analysis, and conclusion writing. The criteria selection is informed by common assessment frameworks for each assignment type at the specified grade level.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Why Rubrics Matter for Teaching and Learning</h2>
@@ -135,7 +135,7 @@ export default function RubricBuilderPage() {
           Rubrics are among the most consistently evidence-supported tools in assessment design. Research by Jonsson and Svingby (2007) found that well-designed rubrics improve the reliability of teacher scoring and, when shared with students in advance, consistently improve the quality of student work. The mechanism is straightforward: students perform better on tasks when they understand what quality looks like before they begin.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          For teachers, rubrics protect grading consistency â€” especially important for subjective assignments like writing and presentations, where implicit biases and fatigue can affect scores. A rubric externalizes the standard, making it visible to teacher and student alike.
+          For teachers, rubrics protect grading consistency — especially important for subjective assignments like writing and presentations, where implicit biases and fatigue can affect scores. A rubric externalizes the standard, making it visible to teacher and student alike.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           Rubrics also facilitate feedback. Instead of writing the same comments on twenty essays, a teacher can point to a specific descriptor and explain what moving to the next performance level would require. This is faster and more actionable for students.
@@ -162,13 +162,13 @@ export default function RubricBuilderPage() {
           <li>She clicks <strong>Generate</strong> and receives a rubric with four criteria: Argument &amp; Claim, Evidence &amp; Support, Organization, and Conventions. Each criterion has four performance level descriptors.</li>
         </ol>
         <p className="text-slate-700 leading-relaxed mb-4">
-          She reviews the Conventions criterion and updates the Proficient descriptor to match her school&apos;s specific grammar expectations. She adds the rubric to the assignment handout and introduces it on day one. On grading day, she moves through the rubrics in about 4 minutes per essay instead of 8 â€” a 50% time saving on a 30-essay grading session.
+          She reviews the Conventions criterion and updates the Proficient descriptor to match her school&apos;s specific grammar expectations. She adds the rubric to the assignment handout and introduces it on day one. On grading day, she moves through the rubrics in about 4 minutes per essay instead of 8 — a 50% time saving on a 30-essay grading session.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">How to Get the Best Results</h2>
         <h3 className="text-base font-semibold text-slate-700 mt-5 mb-2">Be specific about the assignment type</h3>
         <p className="text-slate-700 leading-relaxed mb-4">
-          &quot;Essay&quot; generates generic criteria. &quot;Five-paragraph argumentative essay on a historical event â€” students must include primary source evidence&quot; generates criteria that include evidence sourcing as a distinct dimension. The assignment description drives the criteria selection.
+          &quot;Essay&quot; generates generic criteria. &quot;Five-paragraph argumentative essay on a historical event — students must include primary source evidence&quot; generates criteria that include evidence sourcing as a distinct dimension. The assignment description drives the criteria selection.
         </p>
         <h3 className="text-base font-semibold text-slate-700 mt-5 mb-2">Replace vague descriptor language after generation</h3>
         <p className="text-slate-700 leading-relaxed mb-4">
@@ -177,7 +177,7 @@ export default function RubricBuilderPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI rubrics are built on general knowledge of assessment practices for each assignment type â€” they are not aligned to your specific curriculum standards or assignment prompt. After generation, match the criteria language to your actual assignment requirements and adjust any descriptors that reference content you haven&apos;t covered. Once you&apos;re grading work against the rubric, the <Link href="/essay-feedback-generator" className="text-brand-700 underline">Essay Feedback Generator</Link> produces structured, specific written comments to accompany the rubric score.
+          AI rubrics are built on general knowledge of assessment practices for each assignment type — they are not aligned to your specific curriculum standards or assignment prompt. After generation, match the criteria language to your actual assignment requirements and adjust any descriptors that reference content you haven&apos;t covered. Once you&apos;re grading work against the rubric, the <Link href="/essay-feedback-generator" className="text-brand-700 underline">Essay Feedback Generator</Link> produces structured, specific written comments to accompany the rubric score.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           The tool generates text rubrics, not formatted tables. You will need to format the output into a table in your word processor or LMS before use. The structure is provided; the formatting is yours to apply. To plan the lesson that introduces the assignment and rubric, the <Link href="/lesson-plan-generator" className="text-brand-700 underline">Lesson Plan Generator</Link> builds a complete lesson with objectives, activities, and assessment built in.
@@ -191,18 +191,18 @@ export default function RubricBuilderPage() {
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
         <div className="space-y-5">
           {[
-            { q: 'What is a rubric and why should teachers use one?', a: 'A rubric is a scoring guide defining quality standards through criteria and performance descriptors. It makes grading faster and more consistent for teachers, and clarifies expectations for students before work begins â€” both linked to improved outcomes.' },
+            { q: 'What is a rubric and why should teachers use one?', a: 'A rubric is a scoring guide defining quality standards through criteria and performance descriptors. It makes grading faster and more consistent for teachers, and clarifies expectations for students before work begins — both linked to improved outcomes.' },
             { q: 'What is the difference between analytic and holistic rubrics?', a: 'Analytic rubrics assess each criterion separately, providing a score per dimension. Holistic rubrics give one overall quality score. This generator creates analytic rubrics, which are more informative for feedback and student growth.' },
-            { q: 'How many criteria should a rubric have?', a: 'Most effective rubrics use 3â€“6 criteria. The default of 4 covers most assignments well. Fewer than 3 may miss important dimensions; more than 6 becomes difficult to use consistently.' },
+            { q: 'How many criteria should a rubric have?', a: 'Most effective rubrics use 3–6 criteria. The default of 4 covers most assignments well. Fewer than 3 may miss important dimensions; more than 6 becomes difficult to use consistently.' },
             { q: 'Which scoring scale should I choose?', a: 'The 4-point scale is most common in K-12 and aligns to standards-based grading. The 5-point scale adds nuance between levels. The percentage scale converts directly to letter grades. Choose the scale that matches your school\'s grading system.' },
-            { q: 'Should I share the rubric with students before the assignment?', a: 'Yes â€” this is a clear research-backed practice. Students who see the rubric before working understand targets more clearly and produce higher-quality work.' },
+            { q: 'Should I share the rubric with students before the assignment?', a: 'Yes — this is a clear research-backed practice. Students who see the rubric before working understand targets more clearly and produce higher-quality work.' },
             { q: 'Can I use this for project-based learning assessments?', a: 'Yes. Enter your PBL product as the assignment type (e.g., "engineering design prototype" or "documentary video") and adjust criteria count to cover all relevant dimensions.' },
             { q: 'How do I make descriptors more specific?', a: 'Replace vague words like "good" or "adequate" with observable, specific language. "Uses three or more pieces of evidence" is better than "uses evidence." Specificity improves with your subject knowledge applied after generation.' },
             { q: 'Is the GogyAI rubric builder free?', a: 'Yes, completely free. No account or subscription required.' },
           ].map(item => (
             <div key={item.q} className="border-b border-slate-100 pb-4">
               <p className="font-semibold text-slate-800 mb-1">{item.q}</p>
-              <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              <p className="text-slate-700 text-sm leading-relaxed">{item.a}</p>
             </div>
           ))}
         </div>
@@ -214,7 +214,7 @@ export default function RubricBuilderPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-600">{tool.desc}</p>
+              <p className="text-sm text-slate-700">{tool.desc}</p>
             </Link>
           ))}
         </div>

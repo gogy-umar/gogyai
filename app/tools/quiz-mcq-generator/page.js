@@ -1,9 +1,9 @@
-ï»¿import ToolForm from '@/components/ToolForm'
+import ToolForm from '@/components/ToolForm'
 import Link from 'next/link'
 import ToolNav from '@/components/ToolNav'
 
 export const metadata = {
-  title: 'Quiz & MCQ Generator â€” Free AI Tool for Teachers',
+  title: 'Quiz & MCQ Generator — Free AI Tool for Teachers',
   description: 'Generate complete quizzes with multiple choice questions, true/false, and answer keys. Free AI quiz generator for K-12 teachers. No login required.',
   alternates: { canonical: 'https://gogyai.com/quiz-mcq-generator' },
 }
@@ -66,7 +66,7 @@ const RELATED = [
 const schemas = {
   webPage: {
     '@context': 'https://schema.org', '@type': 'WebPage',
-    name: 'Quiz & MCQ Generator â€” GogyAI',
+    name: 'Quiz & MCQ Generator — GogyAI',
     url: 'https://gogyai.com/quiz-mcq-generator',
   },
   software: {
@@ -88,11 +88,11 @@ const schemas = {
     '@context': 'https://schema.org', '@type': 'FAQPage',
     mainEntity: [
       { '@type': 'Question', name: 'How do I generate a quiz with an AI tool?', acceptedAnswer: { '@type': 'Answer', text: 'Enter your subject, grade level, topic, number of questions, difficulty level, and question type. The AI generates a complete quiz with all questions and a labeled answer key. Review the output for accuracy before distributing to students.' } },
-      { '@type': 'Question', name: 'Are AI-generated quiz questions accurate?', acceptedAnswer: { '@type': 'Answer', text: 'AI-generated questions are generally accurate for well-established topics at standard grade levels. Accuracy decreases for highly specialized, recent, or nuanced content. Always review each question against your teaching materials before use â€” treat the output as a first draft, not a final assessment.' } },
+      { '@type': 'Question', name: 'Are AI-generated quiz questions accurate?', acceptedAnswer: { '@type': 'Answer', text: 'AI-generated questions are generally accurate for well-established topics at standard grade levels. Accuracy decreases for highly specialized, recent, or nuanced content. Always review each question against your teaching materials before use — treat the output as a first draft, not a final assessment.' } },
       { '@type': 'Question', name: 'Can I generate True/False questions as well as MCQ?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Select "True / False" or "Mixed" in the question type field. The Mixed option generates a blend of multiple choice and true/false questions, which is useful for quizzes that test both recall and comprehension.' } },
-      { '@type': 'Question', name: 'How do I adjust the difficulty of generated quiz questions?', acceptedAnswer: { '@type': 'Answer', text: 'Select the difficulty level â€” easy, medium, hard, or mixed. Mixed distributes questions across all three levels, which is useful for a diagnostic quiz or a quiz that stretches the full class range. For a review quiz, easy or mixed tends to work best.' } },
+      { '@type': 'Question', name: 'How do I adjust the difficulty of generated quiz questions?', acceptedAnswer: { '@type': 'Answer', text: 'Select the difficulty level — easy, medium, hard, or mixed. Mixed distributes questions across all three levels, which is useful for a diagnostic quiz or a quiz that stretches the full class range. For a review quiz, easy or mixed tends to work best.' } },
       { '@type': 'Question', name: 'Can AI-generated quizzes be used for summative assessments?', acceptedAnswer: { '@type': 'Answer', text: 'AI-generated quizzes are most appropriate as formative checks, practice tests, or review quizzes. For high-stakes summative assessments, use the AI output as a starting framework and carefully review and rewrite questions to ensure alignment to your specific standards and taught content.' } },
-      { '@type': 'Question', name: 'How do I avoid questions that are too easy or all the same?', acceptedAnswer: { '@type': 'Answer', text: 'Select "Mixed" difficulty and be specific in the topic field. Instead of "World War II," enter "Causes of World War II â€” focusing on the Treaty of Versailles and the rise of fascism." Specific topics produce questions with genuine variation in what students must recall and reason about.' } },
+      { '@type': 'Question', name: 'How do I avoid questions that are too easy or all the same?', acceptedAnswer: { '@type': 'Answer', text: 'Select "Mixed" difficulty and be specific in the topic field. Instead of "World War II," enter "Causes of World War II — focusing on the Treaty of Versailles and the rise of fascism." Specific topics produce questions with genuine variation in what students must recall and reason about.' } },
       { '@type': 'Question', name: 'Can I use this tool to generate practice tests for standardized exams?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, with caution. AI can generate MCQ practice questions in the format of standardized tests. However, the item quality will not match professionally validated test items. Use AI-generated practice questions as supplementary preparation, not as official test preparation materials.' } },
       { '@type': 'Question', name: 'Is the GogyAI quiz generator free?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, completely free. No account or subscription required.' } },
     ],
@@ -104,7 +104,7 @@ export default function QuizMcqGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Quiz &amp; MCQ Generator</h1>
-        <p className="text-slate-600 mb-6">Generate a complete quiz â€” multiple choice, true/false, or mixed â€” with an answer key, in seconds.</p>
+        <p className="text-slate-600 mb-6">Generate a complete quiz — multiple choice, true/false, or mixed — with an answer key, in seconds.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="quiz-mcq-generator" />
       </section>
 
@@ -124,7 +124,7 @@ export default function QuizMcqGeneratorPage() {
         </div>
 
         <p className="text-slate-700 leading-relaxed mb-4">
-          Writing a 10-question multiple choice quiz is one of those tasks that sounds quick but rarely is. Each question requires a clear stem, one unambiguously correct answer, and three plausible distractors â€” all while avoiding common item-writing errors like double negatives, trick phrasing, or distractors that are obviously wrong. For a unit review quiz, that&apos;s 40 answer options to write before you&apos;ve even formatted the document. An AI quiz generator handles the construction; you handle the review.
+          Writing a 10-question multiple choice quiz is one of those tasks that sounds quick but rarely is. Each question requires a clear stem, one unambiguously correct answer, and three plausible distractors — all while avoiding common item-writing errors like double negatives, trick phrasing, or distractors that are obviously wrong. For a unit review quiz, that&apos;s 40 answer options to write before you&apos;ve even formatted the document. An AI quiz generator handles the construction; you handle the review.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           This guide explains what AI quiz generators do well, where to be cautious, and how to get the most useful output from this tool.
@@ -132,7 +132,7 @@ export default function QuizMcqGeneratorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">What Is an AI Quiz Generator?</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          An AI quiz generator takes your subject, grade level, topic, and settings â€” number of questions, difficulty, and type â€” and produces a complete, formatted quiz with an answer key. It handles every element: question stems, answer options, distractor quality, and answer labeling. The output is ready to copy into your quiz platform or print directly.
+          An AI quiz generator takes your subject, grade level, topic, and settings — number of questions, difficulty, and type — and produces a complete, formatted quiz with an answer key. It handles every element: question stems, answer options, distractor quality, and answer labeling. The output is ready to copy into your quiz platform or print directly.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           The difference between a generic AI quiz and a useful one comes down to topic specificity and your review. AI is excellent at generating structurally sound questions; the teacher ensures those questions align with what was actually taught.
@@ -140,18 +140,18 @@ export default function QuizMcqGeneratorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Why AI Quiz Generation Matters for Teachers</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Assessment creation is consistently underestimated in the teaching workload. A quality 10-question MCQ quiz â€” with well-written distractors, appropriate difficulty spread, and a clean answer key â€” takes an experienced teacher 30 to 45 minutes to write carefully. For teachers who quiz regularly (weekly review quizzes, unit checks, practice tests), that time compounds quickly across a school year.
+          Assessment creation is consistently underestimated in the teaching workload. A quality 10-question MCQ quiz — with well-written distractors, appropriate difficulty spread, and a clean answer key — takes an experienced teacher 30 to 45 minutes to write carefully. For teachers who quiz regularly (weekly review quizzes, unit checks, practice tests), that time compounds quickly across a school year.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI quiz generators compress the drafting phase to under five minutes. The remaining teacher time is spent reviewing, not building from scratch â€” which is a fundamentally different and more productive use of expertise.
+          AI quiz generators compress the drafting phase to under five minutes. The remaining teacher time is spent reviewing, not building from scratch — which is a fundamentally different and more productive use of expertise.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">How This Tool Works</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          You specify the subject, grade level, topic, number of questions, difficulty, and question type. The AI generates the complete quiz formatted with numbered questions, labeled answer options (A, B, C, D for MCQ), and a clearly labeled answer key at the end. Mixed difficulty distributes questions across easy, medium, and hard â€” useful for quizzes that serve the full range of your class.
+          You specify the subject, grade level, topic, number of questions, difficulty, and question type. The AI generates the complete quiz formatted with numbered questions, labeled answer options (A, B, C, D for MCQ), and a clearly labeled answer key at the end. Mixed difficulty distributes questions across easy, medium, and hard — useful for quizzes that serve the full range of your class.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The mixed question type option combines multiple choice and true/false, which is useful for keeping quiz formats engaging and varying the cognitive demand â€” true/false tests recognition while MCQ tests discrimination among options.
+          The mixed question type option combines multiple choice and true/false, which is useful for keeping quiz formats engaging and varying the cognitive demand — true/false tests recognition while MCQ tests discrimination among options.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Step-by-Step: Using the Quiz Generator in Your Classroom</h2>
@@ -161,7 +161,7 @@ export default function QuizMcqGeneratorPage() {
         <ol className="list-decimal pl-5 text-slate-700 space-y-2 mb-4">
           <li><strong>Subject:</strong> &quot;8th Grade Earth Science.&quot;</li>
           <li><strong>Grade Level:</strong> &quot;Grade 8.&quot;</li>
-          <li><strong>Topic:</strong> &quot;The water cycle â€” evaporation, condensation, precipitation, and runoff.&quot;</li>
+          <li><strong>Topic:</strong> &quot;The water cycle — evaporation, condensation, precipitation, and runoff.&quot;</li>
           <li><strong>Number of Questions:</strong> 10.</li>
           <li><strong>Difficulty:</strong> Mixed.</li>
           <li><strong>Question Type:</strong> Multiple Choice (MCQ).</li>
@@ -174,15 +174,15 @@ export default function QuizMcqGeneratorPage() {
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">How to Get the Best Results</h2>
         <h3 className="text-base font-semibold text-slate-700 mt-5 mb-2">Narrow the topic to match what was taught</h3>
         <p className="text-slate-700 leading-relaxed mb-4">
-          &quot;Biology&quot; generates generic questions. &quot;Cell division â€” mitosis phases, specifically what was covered in the first two class sessions&quot; generates questions directly aligned to your taught content. The more you describe the scope of your topic, the more useful the questions.
+          &quot;Biology&quot; generates generic questions. &quot;Cell division — mitosis phases, specifically what was covered in the first two class sessions&quot; generates questions directly aligned to your taught content. The more you describe the scope of your topic, the more useful the questions.
         </p>
         <h3 className="text-base font-semibold text-slate-700 mt-5 mb-2">Review distractors critically</h3>
         <p className="text-slate-700 leading-relaxed mb-4">
-          AI distractors are sometimes too obviously wrong or, occasionally, accidentally ambiguous. Read each set of four options as a student would â€” if the wrong answers are immediately dismissible, the question isn&apos;t testing much. Strengthen weak distractors before use.
+          AI distractors are sometimes too obviously wrong or, occasionally, accidentally ambiguous. Read each set of four options as a student would — if the wrong answers are immediately dismissible, the question isn&apos;t testing much. Strengthen weak distractors before use.
         </p>
         <h3 className="text-base font-semibold text-slate-700 mt-5 mb-2">Use mixed difficulty for diagnostic value</h3>
         <p className="text-slate-700 leading-relaxed mb-4">
-          A quiz that only contains hard questions doesn&apos;t tell you much about where students are â€” everyone struggles. Mixed difficulty lets you see who has mastered the basics, who is approaching grade-level mastery, and who is ready for extension.
+          A quiz that only contains hard questions doesn&apos;t tell you much about where students are — everyone struggles. Mixed difficulty lets you see who has mastered the basics, who is approaching grade-level mastery, and who is ready for extension.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
@@ -205,9 +205,9 @@ export default function QuizMcqGeneratorPage() {
         <div className="space-y-5">
           {[
             { q: 'How do I generate a quiz with an AI tool?', a: 'Enter your subject, grade level, topic, number of questions, difficulty, and question type. The AI generates a complete quiz with an answer key. Review for accuracy against your teaching materials before distributing.' },
-            { q: 'Are AI-generated quiz questions accurate?', a: 'Generally accurate for well-established topics at standard grade levels. Accuracy decreases for highly specialized or recent content. Always review each question before use â€” treat output as a first draft.' },
+            { q: 'Are AI-generated quiz questions accurate?', a: 'Generally accurate for well-established topics at standard grade levels. Accuracy decreases for highly specialized or recent content. Always review each question before use — treat output as a first draft.' },
             { q: 'Can I generate True/False questions?', a: 'Yes. Select "True / False" or "Mixed" in the question type field. The Mixed option generates a blend of MCQ and true/false questions, testing both recognition and discrimination.' },
-            { q: 'How do I adjust the difficulty of generated questions?', a: 'Select the difficulty level â€” easy, medium, hard, or mixed. Mixed distributes questions across all three levels, useful for diagnostic quizzes or stretching the full class range.' },
+            { q: 'How do I adjust the difficulty of generated questions?', a: 'Select the difficulty level — easy, medium, hard, or mixed. Mixed distributes questions across all three levels, useful for diagnostic quizzes or stretching the full class range.' },
             { q: 'Can AI-generated quizzes be used for summative assessments?', a: 'Best used as formative checks, practice tests, or review quizzes. For high-stakes summative assessments, use AI output as a starting framework and carefully review and rewrite questions for alignment to your standards.' },
             { q: 'How do I avoid questions that are too easy or all the same?', a: 'Select "Mixed" difficulty and be specific in the topic field. Specific topics produce questions with genuine variation rather than repeated surface-level recall.' },
             { q: 'Can I use this for standardized exam practice?', a: 'Yes, with caution. AI can generate MCQ practice questions in standardized formats, but item quality will not match professionally validated test items. Use as supplementary preparation only.' },
@@ -215,7 +215,7 @@ export default function QuizMcqGeneratorPage() {
           ].map(item => (
             <div key={item.q} className="border-b border-slate-100 pb-4">
               <p className="font-semibold text-slate-800 mb-1">{item.q}</p>
-              <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              <p className="text-slate-700 text-sm leading-relaxed">{item.a}</p>
             </div>
           ))}
         </div>
@@ -227,7 +227,7 @@ export default function QuizMcqGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-600">{tool.desc}</p>
+              <p className="text-sm text-slate-700">{tool.desc}</p>
             </Link>
           ))}
         </div>

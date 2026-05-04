@@ -1,9 +1,9 @@
-ï»¿import ToolForm from '@/components/ToolForm'
+import ToolForm from '@/components/ToolForm'
 import Link from 'next/link'
 import ToolNav from '@/components/ToolNav'
 
 export const metadata = {
-  title: 'Unit Plan Creator â€” Free AI Tool for Teachers',
+  title: 'Unit Plan Creator — Free AI Tool for Teachers',
   description: 'Generate a complete week-by-week unit plan with AI. Free unit plan creator for teachers covering any subject, grade, and theme. No login required.',
   alternates: { canonical: 'https://gogyai.com/unit-plan-creator' },
 }
@@ -45,17 +45,17 @@ const RELATED = [
 ]
 
 const schemas = {
-  webPage: { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Unit Plan Creator â€” GogyAI', url: 'https://gogyai.com/unit-plan-creator' },
+  webPage: { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Unit Plan Creator — GogyAI', url: 'https://gogyai.com/unit-plan-creator' },
   software: { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: 'AI Unit Plan Creator', applicationCategory: 'EducationalApplication', operatingSystem: 'Web', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, url: 'https://gogyai.com/unit-plan-creator' },
   article: { '@context': 'https://schema.org', '@type': 'Article', headline: 'AI Unit Plan Creator for Teachers: Plan Entire Units in Minutes', author: { '@type': 'Organization', name: 'GogyAI' }, publisher: { '@type': 'Organization', name: 'GogyAI', url: 'https://gogyai.com' }, url: 'https://gogyai.com/unit-plan-creator' },
   faq: {
     '@context': 'https://schema.org', '@type': 'FAQPage',
     mainEntity: [
       { '@type': 'Question', name: 'What should a unit plan include?', acceptedAnswer: { '@type': 'Answer', text: 'A strong unit plan includes essential questions, weekly lesson focus areas, key vocabulary, major activities, formative and summative assessments, and differentiation strategies. The AI unit plan creator generates all of these from your inputs.' } },
-      { '@type': 'Question', name: 'How long does it take to create a unit plan with AI?', acceptedAnswer: { '@type': 'Answer', text: 'Generating a unit plan with AI takes under 15 seconds. Reviewing and customizing the output for your specific class and standards typically takes 10â€“20 minutes â€” far less than building from scratch.' } },
+      { '@type': 'Question', name: 'How long does it take to create a unit plan with AI?', acceptedAnswer: { '@type': 'Answer', text: 'Generating a unit plan with AI takes under 15 seconds. Reviewing and customizing the output for your specific class and standards typically takes 10–20 minutes — far less than building from scratch.' } },
       { '@type': 'Question', name: 'Can the AI unit plan creator align to Common Core or NGSS?', acceptedAnswer: { '@type': 'Answer', text: 'The AI writes educationally sound unit plans but does not automatically attach standard codes. Paste your relevant standards into the Key Standards field and the AI will incorporate them into the plan objectives. You add the specific codes after generation.' } },
-      { '@type': 'Question', name: 'Is a unit plan the same as a curriculum map?', acceptedAnswer: { '@type': 'Answer', text: 'No. A curriculum map covers an entire course or year and shows how units connect. A unit plan is the detailed design for one specific unit â€” typically 2â€“6 weeks. This tool generates individual unit plans; multiple unit plans combine to form a curriculum map.' } },
-      { '@type': 'Question', name: 'How many weeks can I plan with the AI unit plan creator?', acceptedAnswer: { '@type': 'Answer', text: 'The tool works best for units of 1â€“8 weeks. For longer units, consider splitting the theme into two connected units and generating each separately for more detailed output.' } },
+      { '@type': 'Question', name: 'Is a unit plan the same as a curriculum map?', acceptedAnswer: { '@type': 'Answer', text: 'No. A curriculum map covers an entire course or year and shows how units connect. A unit plan is the detailed design for one specific unit — typically 2–6 weeks. This tool generates individual unit plans; multiple unit plans combine to form a curriculum map.' } },
+      { '@type': 'Question', name: 'How many weeks can I plan with the AI unit plan creator?', acceptedAnswer: { '@type': 'Answer', text: 'The tool works best for units of 1–8 weeks. For longer units, consider splitting the theme into two connected units and generating each separately for more detailed output.' } },
       { '@type': 'Question', name: 'Does the unit plan creator work for project-based learning?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Specify a project-based theme in the Unit Theme field and mention PBL in the goals. The AI will structure activities around inquiry, investigation, and a culminating project.' } },
       { '@type': 'Question', name: 'Is the GogyAI unit plan creator free?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, completely free. No account or subscription needed.' } },
     ],
@@ -87,7 +87,7 @@ export default function UnitPlanCreatorPage() {
         </div>
 
         <p className="text-slate-700 leading-relaxed mb-4">
-          Unit planning is where most of a teacher's deep curriculum thinking happens â€” and it's also where many teachers spend the most time staring at a blank page. An AI unit plan creator handles the structural scaffolding so you can focus on the pedagogical decisions that actually require your expertise.
+          Unit planning is where most of a teacher's deep curriculum thinking happens — and it's also where many teachers spend the most time staring at a blank page. An AI unit plan creator handles the structural scaffolding so you can focus on the pedagogical decisions that actually require your expertise.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           This guide covers what AI unit planning tools do well, where they fall short, and how to use them to build units your students will actually engage with.
@@ -95,7 +95,7 @@ export default function UnitPlanCreatorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">What Is an AI Unit Plan Creator?</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          An AI unit plan creator takes your subject, grade level, unit theme, duration, and key learning goals, then generates a structured week-by-week plan with lesson focus areas, assessments, vocabulary, and activities. It does in seconds what would take a teacher 2â€“3 hours to draft from scratch.
+          An AI unit plan creator takes your subject, grade level, unit theme, duration, and key learning goals, then generates a structured week-by-week plan with lesson focus areas, assessments, vocabulary, and activities. It does in seconds what would take a teacher 2–3 hours to draft from scratch.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           These tools work because unit planning follows recognizable instructional design patterns: essential questions, skill progression, formative checks at key intervals, and a culminating assessment. AI language models trained on educational content can apply these patterns reliably across virtually any subject area.
@@ -103,7 +103,7 @@ export default function UnitPlanCreatorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Why Unit Plan Creators Matter for Educators</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          A complete unit plan for a 3-week unit typically takes an experienced teacher 2â€“4 hours to draft. For department teams doing collaborative planning, this multiplies quickly. AI unit plan creators compress that drafting phase to minutes, giving teams a structured proposal to react to rather than a blank template to fill.
+          A complete unit plan for a 3-week unit typically takes an experienced teacher 2–4 hours to draft. For department teams doing collaborative planning, this multiplies quickly. AI unit plan creators compress that drafting phase to minutes, giving teams a structured proposal to react to rather than a blank template to fill.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           For new teachers, unit planning tools provide a professional framework that would otherwise require years of experience to internalize. The essential questions, backward design structure, and embedded assessments in a good AI-generated unit plan model quality instructional design automatically.
@@ -114,7 +114,7 @@ export default function UnitPlanCreatorPage() {
           You input your subject, grade, unit theme, number of weeks, and key standards or goals. The AI generates a week-by-week plan: each week has a focus, lesson titles, key vocabulary, activities, and an assessment checkpoint. It also produces unit-level essential questions and a final summative assessment description.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          The output is a complete framework that you customize â€” adjusting lesson titles to match your textbook, adding your specific standard codes, and replacing generic resources with the materials you actually have. The AI builds the house; you furnish it with your classroom context.
+          The output is a complete framework that you customize — adjusting lesson titles to match your textbook, adding your specific standard codes, and replacing generic resources with the materials you actually have. The AI builds the house; you furnish it with your classroom context.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Step-by-Step: Using the Unit Plan Creator in Your Classroom</h2>
@@ -123,18 +123,18 @@ export default function UnitPlanCreatorPage() {
         </p>
         <ol className="list-decimal pl-5 text-slate-700 space-y-2 mb-4">
           <li>He enters "World History, Grade 10" for subject and grade.</li>
-          <li>Unit Theme: "World War I â€” Causes, Course, and Consequences."</li>
+          <li>Unit Theme: "World War I — Causes, Course, and Consequences."</li>
           <li>Duration: 4 weeks.</li>
           <li>Goals: "Analyze the causes of WWI (MAIN), trace major events, evaluate the Treaty of Versailles, connect to WWII origins."</li>
           <li>He generates the plan and receives a week-by-week structure in 10 seconds.</li>
-          <li>He reviews: Week 1 covers nationalism and alliance systems, Week 2 covers major battles, Week 3 covers the home front and global dimensions, Week 4 covers the armistice and peace process â€” all logically sequenced.</li>
+          <li>He reviews: Week 1 covers nationalism and alliance systems, Week 2 covers major battles, Week 3 covers the home front and global dimensions, Week 4 covers the armistice and peace process — all logically sequenced.</li>
           <li>He adds his state standard codes, replaces the suggested textbook with his district's adopted resource, and adjusts Week 3 to include primary source analysis, which his school's literacy initiative requires.</li>
         </ol>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">How to Get the Best Results</h2>
         <h3 className="text-base font-semibold text-slate-700 mt-5 mb-2">Include your key standards in the goals field</h3>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Pasting your relevant standard language into the goals field dramatically improves how well the AI structures the unit's learning progression. You don't need to paste code numbers â€” just the skill language from the standard.
+          Pasting your relevant standard language into the goals field dramatically improves how well the AI structures the unit's learning progression. You don't need to paste code numbers — just the skill language from the standard.
         </p>
         <h3 className="text-base font-semibold text-slate-700 mt-5 mb-2">Name a specific culminating task if you have one</h3>
         <p className="text-slate-700 leading-relaxed mb-4">
@@ -151,23 +151,23 @@ export default function UnitPlanCreatorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Unit planning inputs contain no student data. Do not include student names or individual student information in your inputs. GogyAI stores no personal information â€” your inputs are used solely to generate your plan. Explore <Link href="/" className="text-brand-700 underline">GogyAI's full collection of free tools</Link> for lesson planning, assessment, communication, and classroom management tools built for educators.
+          Unit planning inputs contain no student data. Do not include student names or individual student information in your inputs. GogyAI stores no personal information — your inputs are used solely to generate your plan. Explore <Link href="/" className="text-brand-700 underline">GogyAI's full collection of free tools</Link> for lesson planning, assessment, communication, and classroom management tools built for educators.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
         <div className="space-y-5">
           {[
             { q: 'What should a unit plan include?', a: 'A strong unit plan includes essential questions, weekly lesson focus areas, key vocabulary, major activities, formative and summative assessments, and differentiation strategies. The AI unit plan creator generates all of these from your inputs.' },
-            { q: 'How long does it take to create a unit plan with AI?', a: 'Generating takes under 15 seconds. Reviewing and customizing typically takes 10â€“20 minutes â€” far less than building from scratch.' },
+            { q: 'How long does it take to create a unit plan with AI?', a: 'Generating takes under 15 seconds. Reviewing and customizing typically takes 10–20 minutes — far less than building from scratch.' },
             { q: 'Can the AI unit plan creator align to Common Core or NGSS?', a: 'Paste your relevant standard language into the Key Standards field and the AI incorporates it into the plan objectives. Add specific standard codes yourself after generation.' },
-            { q: 'Is a unit plan the same as a curriculum map?', a: 'No. A curriculum map covers an entire course or year. A unit plan designs one specific unit â€” typically 2â€“6 weeks. Multiple unit plans combine to form a curriculum map.' },
-            { q: 'How many weeks can I plan with the AI unit plan creator?', a: 'Best for 1â€“8 week units. For longer units, split the theme into two connected units and generate each separately.' },
+            { q: 'Is a unit plan the same as a curriculum map?', a: 'No. A curriculum map covers an entire course or year. A unit plan designs one specific unit — typically 2–6 weeks. Multiple unit plans combine to form a curriculum map.' },
+            { q: 'How many weeks can I plan with the AI unit plan creator?', a: 'Best for 1–8 week units. For longer units, split the theme into two connected units and generate each separately.' },
             { q: 'Does the unit plan creator work for project-based learning?', a: 'Yes. Specify a PBL theme and mention project-based learning in your goals. The AI will structure activities around inquiry and a culminating project.' },
             { q: 'Is the GogyAI unit plan creator free?', a: 'Yes, completely free. No account or subscription needed.' },
           ].map(item => (
             <div key={item.q} className="border-b border-slate-100 pb-4">
               <p className="font-semibold text-slate-800 mb-1">{item.q}</p>
-              <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              <p className="text-slate-700 text-sm leading-relaxed">{item.a}</p>
             </div>
           ))}
         </div>
@@ -179,7 +179,7 @@ export default function UnitPlanCreatorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-600">{tool.desc}</p>
+              <p className="text-sm text-slate-700">{tool.desc}</p>
             </Link>
           ))}
         </div>

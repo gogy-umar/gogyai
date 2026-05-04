@@ -1,9 +1,9 @@
-ï»¿import ToolForm from '@/components/ToolForm'
+import ToolForm from '@/components/ToolForm'
 import Link from 'next/link'
 import ToolNav from '@/components/ToolNav'
 
 export const metadata = {
-  title: 'Report Card Comment Generator â€” Free AI Tool for Teachers',
+  title: 'Report Card Comment Generator — Free AI Tool for Teachers',
   description: 'Generate professional report card comments in short, medium, and detailed lengths. Free AI tool for K-12 teachers. No login required.',
   alternates: { canonical: 'https://gogyai.com/report-card-comment-generator' },
 }
@@ -47,17 +47,17 @@ Tone: {tone}
 
 Provide three comment options:
 
-OPTION 1 â€” SHORT (1-2 sentences): Suitable for report cards with tight character limits. Include one strength and one growth area.
+OPTION 1 — SHORT (1-2 sentences): Suitable for report cards with tight character limits. Include one strength and one growth area.
 
-OPTION 2 â€” MEDIUM (3-4 sentences): Suitable for standard report cards. Include performance context, strength, growth area, and a forward-looking note.
+OPTION 2 — MEDIUM (3-4 sentences): Suitable for standard report cards. Include performance context, strength, growth area, and a forward-looking note.
 
-OPTION 3 â€” DETAILED (5-7 sentences): Suitable for report cards with space for extended comments. Include specific skill observations, learning behaviors, strength, growth area, suggested home support, and an encouraging close.
+OPTION 3 — DETAILED (5-7 sentences): Suitable for report cards with space for extended comments. Include specific skill observations, learning behaviors, strength, growth area, suggested home support, and an encouraging close.
 
 Guidelines:
 - Write in third person (e.g., "[Student] demonstrates...")
 - Use [Student] as a placeholder for the student's name
 - Be specific to the subject and grade level
-- For "needs-improvement" performance, maintain a constructive and encouraging tone â€” focus on growth trajectory and specific support strategies
+- For "needs-improvement" performance, maintain a constructive and encouraging tone — focus on growth trajectory and specific support strategies
 - Avoid generic filler phrases; make each sentence informative for parents`
 
 const RELATED = [
@@ -70,7 +70,7 @@ const RELATED = [
 const schemas = {
   webPage: {
     '@context': 'https://schema.org', '@type': 'WebPage',
-    name: 'Report Card Comment Generator â€” GogyAI',
+    name: 'Report Card Comment Generator — GogyAI',
     url: 'https://gogyai.com/report-card-comment-generator',
   },
   software: {
@@ -91,12 +91,12 @@ const schemas = {
   faq: {
     '@context': 'https://schema.org', '@type': 'FAQPage',
     mainEntity: [
-      { '@type': 'Question', name: 'What should a good report card comment include?', acceptedAnswer: { '@type': 'Answer', text: "A strong report card comment includes: the student's current performance level in the subject; a specific strength or skill that is developing well; an area for growth with a constructive framing; and ideally a forward-looking note or suggestion for home support. The best comments are specific to the student â€” not generic phrases that could apply to any child." } },
+      { '@type': 'Question', name: 'What should a good report card comment include?', acceptedAnswer: { '@type': 'Answer', text: "A strong report card comment includes: the student's current performance level in the subject; a specific strength or skill that is developing well; an area for growth with a constructive framing; and ideally a forward-looking note or suggestion for home support. The best comments are specific to the student — not generic phrases that could apply to any child." } },
       { '@type': 'Question', name: 'How long should a report card comment be?', acceptedAnswer: { '@type': 'Answer', text: 'Comment length depends on your school\'s report card format. Short comments (1-2 sentences) work within strict character limits. Medium comments (3-4 sentences) are standard. Detailed comments (5-7 sentences) work in open-ended narrative sections. This generator produces all three lengths so you can choose the right fit.' } },
-      { '@type': 'Question', name: 'How do I write a report card comment for a struggling student?', acceptedAnswer: { '@type': 'Answer', text: 'Lead with what the student is doing â€” not just what they\'re failing at. Even a struggling student has something genuine to note positively: effort, participation, curiosity, improvement in one area. Then describe the growth area constructively: "Continued practice with..." rather than "Has not mastered..." Maintain a growth-oriented, partnership tone throughout.' } },
-      { '@type': 'Question', name: 'Should report card comments mention specific grades or test scores?', acceptedAnswer: { '@type': 'Answer', text: 'Generally no â€” grades and scores are already visible on the report card. Comments should add context and narrative that numbers cannot convey: learning behaviors, specific skills, growth trajectory, and home support suggestions. Comments that simply restate the grade (e.g., "received a B in math") add no informational value.' } },
-      { '@type': 'Question', name: 'Can I use the same comment template for multiple students?', acceptedAnswer: { '@type': 'Answer', text: 'Using a common structure is fine â€” specificity comes from the strength and growth area fields you enter for each student. Two students at the same performance level in the same subject will generate different comments based on their individual strengths and growth areas. The goal is comments that are recognizable as belonging to a specific child.' } },
-      { '@type': 'Question', name: 'How do I avoid generic report card comment language?', acceptedAnswer: { '@type': 'Answer', text: 'Specificity is the antidote to generic language. Enter a specific strength ("strong mental math skills, particularly with multiplication") rather than a generic one ("good at math"). The AI uses your input to generate specific language â€” vague inputs produce vague comments.' } },
+      { '@type': 'Question', name: 'How do I write a report card comment for a struggling student?', acceptedAnswer: { '@type': 'Answer', text: 'Lead with what the student is doing — not just what they\'re failing at. Even a struggling student has something genuine to note positively: effort, participation, curiosity, improvement in one area. Then describe the growth area constructively: "Continued practice with..." rather than "Has not mastered..." Maintain a growth-oriented, partnership tone throughout.' } },
+      { '@type': 'Question', name: 'Should report card comments mention specific grades or test scores?', acceptedAnswer: { '@type': 'Answer', text: 'Generally no — grades and scores are already visible on the report card. Comments should add context and narrative that numbers cannot convey: learning behaviors, specific skills, growth trajectory, and home support suggestions. Comments that simply restate the grade (e.g., "received a B in math") add no informational value.' } },
+      { '@type': 'Question', name: 'Can I use the same comment template for multiple students?', acceptedAnswer: { '@type': 'Answer', text: 'Using a common structure is fine — specificity comes from the strength and growth area fields you enter for each student. Two students at the same performance level in the same subject will generate different comments based on their individual strengths and growth areas. The goal is comments that are recognizable as belonging to a specific child.' } },
+      { '@type': 'Question', name: 'How do I avoid generic report card comment language?', acceptedAnswer: { '@type': 'Answer', text: 'Specificity is the antidote to generic language. Enter a specific strength ("strong mental math skills, particularly with multiplication") rather than a generic one ("good at math"). The AI uses your input to generate specific language — vague inputs produce vague comments.' } },
       { '@type': 'Question', name: 'Is it appropriate to use AI for report card comments?', acceptedAnswer: { '@type': 'Answer', text: "Yes. Using AI to draft report card comments is a legitimate professional practice, comparable to using a comment bank. The teacher reviews, personalizes, and takes professional ownership of every comment before it goes home. AI compresses drafting time; the teacher ensures each comment is accurate, fair, and appropriate for the individual student." } },
       { '@type': 'Question', name: 'Is the GogyAI report card comment generator free?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, completely free. No account or subscription required.' } },
     ],
@@ -108,7 +108,7 @@ export default function ReportCardCommentGeneratorPage() {
     <>
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h1 className="text-3xl font-bold text-brand-800 mb-2">AI Report Card Comment Generator</h1>
-        <p className="text-slate-600 mb-6">Generate three comment options â€” short, medium, and detailed â€” tailored to each student&apos;s performance, strength, and growth area.</p>
+        <p className="text-slate-600 mb-6">Generate three comment options — short, medium, and detailed — tailored to each student&apos;s performance, strength, and growth area.</p>
         <ToolForm fields={FIELDS} promptTemplate={PROMPT} toolSlug="report-card-comment-generator" />
       </section>
 
@@ -119,16 +119,16 @@ export default function ReportCardCommentGeneratorPage() {
           <p className="font-semibold text-brand-800 mb-2">Quick Summary</p>
           <ul className="space-y-1 list-disc pl-4">
             <li>This guide covers what makes report card comments effective and how AI can help you write them faster without sacrificing quality.</li>
-            <li>Teachers at any grade level who write report card comments â€” especially when managing 25+ students across multiple subjects â€” will benefit most.</li>
+            <li>Teachers at any grade level who write report card comments — especially when managing 25+ students across multiple subjects — will benefit most.</li>
             <li>The generator produces three comment lengths (short, medium, detailed) for each student profile, so you choose the format that fits your report card.</li>
-            <li>Report card comments that take 5â€“8 minutes per student can be drafted in under 90 seconds with AI.</li>
+            <li>Report card comments that take 5–8 minutes per student can be drafted in under 90 seconds with AI.</li>
             <li>Always personalize with the student&apos;s name and review for accuracy before finalizing.</li>
-            <li>Do not enter student names into this tool â€” use [Student] placeholder descriptions only.</li>
+            <li>Do not enter student names into this tool — use [Student] placeholder descriptions only.</li>
           </ul>
         </div>
 
         <p className="text-slate-700 leading-relaxed mb-4">
-          Report card season is among the highest-stress periods in the teaching year. A typical elementary teacher with 28 students writing comments in three subjects needs 84 thoughtful, specific, non-repetitive comments. A secondary teacher with 150 students faces an even larger undertaking. The comments matter â€” they are often the primary written communication a parent receives about their child&apos;s school year â€” yet the volume makes genuine thoughtfulness difficult under time pressure.
+          Report card season is among the highest-stress periods in the teaching year. A typical elementary teacher with 28 students writing comments in three subjects needs 84 thoughtful, specific, non-repetitive comments. A secondary teacher with 150 students faces an even larger undertaking. The comments matter — they are often the primary written communication a parent receives about their child&apos;s school year — yet the volume makes genuine thoughtfulness difficult under time pressure.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           An AI report card comment generator compresses the drafting phase dramatically, producing three length options from your specific inputs about each student&apos;s strength and growth area. Your professional knowledge of the student shapes the inputs; the AI handles the construction.
@@ -136,7 +136,7 @@ export default function ReportCardCommentGeneratorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">What Is an AI Report Card Comment Generator?</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          An AI report card comment generator takes a student&apos;s performance level, subject, grade, key strength, growth area, and preferred tone, and produces three comment options â€” short (1-2 sentences), medium (3-4 sentences), and detailed (5-7 sentences). Each version is calibrated to its length: the short comment conveys one strength and one growth area; the detailed comment adds learning behaviors, home support suggestions, and a motivating close.
+          An AI report card comment generator takes a student&apos;s performance level, subject, grade, key strength, growth area, and preferred tone, and produces three comment options — short (1-2 sentences), medium (3-4 sentences), and detailed (5-7 sentences). Each version is calibrated to its length: the short comment conveys one strength and one growth area; the detailed comment adds learning behaviors, home support suggestions, and a motivating close.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
           The three-option structure is practical because report card formats vary. Short comments fit systems with character limits. Medium comments suit standard printed report cards. Detailed comments work in systems with open narrative sections. Teachers choose the format that matches their system without regenerating.
@@ -147,32 +147,32 @@ export default function ReportCardCommentGeneratorPage() {
           Report card comments are often the only written narrative communication many families receive about their child&apos;s academic progress and learning behaviors. Grades communicate performance level; comments communicate what that grade means in terms of specific skills, growth, and next steps. A parent who reads a meaningful comment gains information they can act on at home; a parent who reads a generic comment gains nothing beyond what the grade already told them.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Research on family engagement consistently shows that specific, actionable communication â€” including report card comments that suggest home support strategies â€” strengthens the home-school partnership and positively affects student outcomes. The quality of the comment is not cosmetic; it has functional consequences for student learning and family engagement.
+          Research on family engagement consistently shows that specific, actionable communication — including report card comments that suggest home support strategies — strengthens the home-school partnership and positively affects student outcomes. The quality of the comment is not cosmetic; it has functional consequences for student learning and family engagement.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">How This Tool Works</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Select the student&apos;s performance level, enter the subject and grade, describe the key strength and growth area in your own words, and choose a tone. The AI generates three comment options using your specific inputs. The strength and growth area fields are the most important â€” the more specific they are, the more specific and useful the comments.
+          Select the student&apos;s performance level, enter the subject and grade, describe the key strength and growth area in your own words, and choose a tone. The AI generates three comment options using your specific inputs. The strength and growth area fields are the most important — the more specific they are, the more specific and useful the comments.
         </p>
         <p className="text-slate-700 leading-relaxed mb-4">
-          For needs-improvement performance levels, the AI maintains a constructive, growth-oriented tone throughout â€” describing what the student is working toward and what will support their growth, rather than cataloging deficits. This tone is both more professional and more useful for families.
+          For needs-improvement performance levels, the AI maintains a constructive, growth-oriented tone throughout — describing what the student is working toward and what will support their growth, rather than cataloging deficits. This tone is both more professional and more useful for families.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Step-by-Step: Using the Report Card Comment Generator</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Ms. Brown teaches 3rd-grade and is writing report card comments for mathematics. She has a student who is performing well overall but needs to develop her written explanation of problem-solving steps â€” a skill her class just started working on this term.
+          Ms. Brown teaches 3rd-grade and is writing report card comments for mathematics. She has a student who is performing well overall but needs to develop her written explanation of problem-solving steps — a skill her class just started working on this term.
         </p>
         <ol className="list-decimal pl-5 text-slate-700 space-y-2 mb-4">
           <li><strong>Performance Level:</strong> Good / Above Average.</li>
           <li><strong>Subject:</strong> &quot;Mathematics.&quot;</li>
           <li><strong>Grade Level:</strong> &quot;Grade 3.&quot;</li>
           <li><strong>Key Strength:</strong> &quot;Strong mental math and enthusiastic participation in group problem-solving.&quot;</li>
-          <li><strong>Growth Area:</strong> &quot;Developing the ability to explain her problem-solving process in writing â€” currently solves correctly but struggles to document steps.&quot;</li>
+          <li><strong>Growth Area:</strong> &quot;Developing the ability to explain her problem-solving process in writing — currently solves correctly but struggles to document steps.&quot;</li>
           <li><strong>Tone:</strong> Warm &amp; Encouraging.</li>
           <li>She clicks <strong>Generate</strong> and receives three comment options immediately.</li>
         </ol>
         <p className="text-slate-700 leading-relaxed mb-4">
-          She selects the medium option, replaces [Student] with the student&apos;s first name, and adds one sentence about the student&apos;s specific enthusiasm for geometry â€” something she noticed this term. Total time: 2 minutes per student. Across 28 students in three subjects, she saves over 10 hours compared to writing from scratch.
+          She selects the medium option, replaces [Student] with the student&apos;s first name, and adds one sentence about the student&apos;s specific enthusiasm for geometry — something she noticed this term. Total time: 2 minutes per student. Across 28 students in three subjects, she saves over 10 hours compared to writing from scratch.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">How to Get the Best Results</h2>
@@ -182,7 +182,7 @@ export default function ReportCardCommentGeneratorPage() {
         </p>
         <h3 className="text-base font-semibold text-slate-700 mt-5 mb-2">Frame growth areas constructively before entering</h3>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Enter growth areas in constructive language: &quot;developing written explanation of mathematical reasoning&quot; rather than &quot;can&apos;t explain her work.&quot; The AI amplifies the language you provide â€” constructive input produces constructive output.
+          Enter growth areas in constructive language: &quot;developing written explanation of mathematical reasoning&quot; rather than &quot;can&apos;t explain her work.&quot; The AI amplifies the language you provide — constructive input produces constructive output.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Limitations and What This Tool Cannot Do</h2>
@@ -195,24 +195,24 @@ export default function ReportCardCommentGeneratorPage() {
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Data Privacy and Classroom Use</h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          Do not enter student names into this tool. Use the [Student] placeholder system â€” fill in the name in your word processor or LMS after generating. FERPA protections apply to report card records. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Visit <Link href="/" className="text-brand-700 underline">GogyAI&apos;s full collection of free tools</Link> for all 30 communication, assessment, and planning tools available free to teachers.
+          Do not enter student names into this tool. Use the [Student] placeholder system — fill in the name in your word processor or LMS after generating. FERPA protections apply to report card records. GogyAI stores no personal information. Inputs are used only during your session and are not retained. Visit <Link href="/" className="text-brand-700 underline">GogyAI&apos;s full collection of free tools</Link> for all 30 communication, assessment, and planning tools available free to teachers.
         </p>
 
         <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-5">Frequently Asked Questions</h2>
         <div className="space-y-5">
           {[
-            { q: 'What should a good report card comment include?', a: "A good report card comment includes the student's current performance level, a specific strength, an area for growth framed constructively, and ideally a forward-looking note or home support suggestion. The best comments are specific â€” not generic phrases that could apply to any student." },
+            { q: 'What should a good report card comment include?', a: "A good report card comment includes the student's current performance level, a specific strength, an area for growth framed constructively, and ideally a forward-looking note or home support suggestion. The best comments are specific — not generic phrases that could apply to any student." },
             { q: 'How long should a report card comment be?', a: 'Comment length depends on your school\'s format. Short (1-2 sentences) for tight character limits, medium (3-4 sentences) for standard cards, detailed (5-7 sentences) for narrative sections. This generator provides all three so you choose the right fit.' },
             { q: 'How do I write a comment for a struggling student?', a: "Lead with what the student is doing, not just what they're failing at. Even a struggling student has something genuine to note. Then describe the growth area constructively: 'Continued practice with...' rather than 'Has not mastered...' Maintain a growth-oriented tone throughout." },
-            { q: 'Should report card comments mention specific grades or test scores?', a: "Generally no â€” grades are already on the card. Comments should add context that numbers can't convey: learning behaviors, specific skills, growth trajectory, and home support suggestions." },
-            { q: 'Can I use the same comment structure for multiple students?', a: "Using a common structure is fine â€” specificity comes from the strength and growth area inputs you enter for each student. Two students at the same level generate different comments when their inputs differ." },
-            { q: 'How do I avoid generic comment language?', a: 'Enter specific strengths and growth areas. "Strong mental math with multiplication" generates specific language; "good at math" generates generic language. The AI uses your input â€” specificity in, specificity out.' },
+            { q: 'Should report card comments mention specific grades or test scores?', a: "Generally no — grades are already on the card. Comments should add context that numbers can't convey: learning behaviors, specific skills, growth trajectory, and home support suggestions." },
+            { q: 'Can I use the same comment structure for multiple students?', a: "Using a common structure is fine — specificity comes from the strength and growth area inputs you enter for each student. Two students at the same level generate different comments when their inputs differ." },
+            { q: 'How do I avoid generic comment language?', a: 'Enter specific strengths and growth areas. "Strong mental math with multiplication" generates specific language; "good at math" generates generic language. The AI uses your input — specificity in, specificity out.' },
             { q: 'Is it appropriate to use AI for report card comments?', a: "Yes. Using AI to draft comments is comparable to using a comment bank. The teacher reviews, personalizes, and takes ownership of every comment before it goes home. AI compresses drafting time; the teacher ensures accuracy and fairness." },
             { q: 'Is the GogyAI report card comment generator free?', a: 'Yes, completely free. No account or subscription required.' },
           ].map(item => (
             <div key={item.q} className="border-b border-slate-100 pb-4">
               <p className="font-semibold text-slate-800 mb-1">{item.q}</p>
-              <p className="text-slate-600 text-sm leading-relaxed">{item.a}</p>
+              <p className="text-slate-700 text-sm leading-relaxed">{item.a}</p>
             </div>
           ))}
         </div>
@@ -224,7 +224,7 @@ export default function ReportCardCommentGeneratorPage() {
           {RELATED.map(tool => (
             <Link key={tool.slug} href={`/${tool.slug}`} className="block bg-brand-50 border border-brand-100 rounded-xl p-4 hover:border-brand-300 hover:shadow-sm transition-all">
               <p className="font-semibold text-brand-800 mb-1">{tool.name}</p>
-              <p className="text-sm text-slate-600">{tool.desc}</p>
+              <p className="text-sm text-slate-700">{tool.desc}</p>
             </Link>
           ))}
         </div>
